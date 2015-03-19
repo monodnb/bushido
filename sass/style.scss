@@ -1,106 +1,42 @@
-/*
-Theme Name: bushido
-Theme URI: http://underscores.me/
-Author: Ionut Achim
-Author URI: http://wearska.com
-Description: Description
-Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: bushido
-Tags:
+@charset "UTF-8";
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+// Mixins
+@import "components/prefixer";
+@import "components/mixins";
+@import "components/color";
 
-bushido is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+// Variables;
+@import "components/variables";
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*/
+// Reset
+@import "components/normalize";
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 Normalize
-2.0 Typography
-3.0 Elements
-4.0 Forms
-5.0 Navigation
-	5.1 Links
-	5.2 Menus
-6.0 Accessibility
-7.0 Alignments
-8.0 Clearings
-9.0 Widgets
-10.0 Content
-	10.1 Posts and pages
-	10.2 Asides
-	10.3 Comments
-11.0 Infinite scroll
-12.0 Media
-	12.1 Captions
-	12.2 Galleries
---------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+// components
+@import "components/global";
+@import "components/icons-material-design";
+@import "components/grid";
+@import "components/navbar";
+@import "components/roboto";
+@import "components/typography";
+@import "components/cards";
+@import "components/toast";
+@import "components/tabs";
+@import "components/tooltip";
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/waves";
+@import "components/modal";
+@import "components/collapsible";
+@import "components/materialbox";
+@import "components/form";
+@import "components/table_of_contents";
+@import "components/sideNav";
+@import "components/preloader";
+@import "components/slider";
+@import "components/date_picker/default.scss";
+@import "components/date_picker/default.date.scss";
+@import "components/date_picker/default.time.scss";
 
-/*--------------------------------------------------------------
-1.0 Normalize
---------------------------------------------------------------*/
-@import "normalize";
-
-/*--------------------------------------------------------------
-2.0 Typography
---------------------------------------------------------------*/
-@import "typography/typography";
-
-/*--------------------------------------------------------------
-3.0 Elements
---------------------------------------------------------------*/
-@import "elements/elements";
-
-/*--------------------------------------------------------------
-4.0 Forms
---------------------------------------------------------------*/
-@import "forms/forms";
-
-/*--------------------------------------------------------------
-5.0 Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
-
-/*--------------------------------------------------------------
-6.0 Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
-
-/*--------------------------------------------------------------
-7.0 Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
-
-/*--------------------------------------------------------------
-8.0 Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
-9.0 Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
-10.0 Content
---------------------------------------------------------------*/
-@import "site/site";
-
-/*--------------------------------------------------------------
-11.0 Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
-
-/*--------------------------------------------------------------
-12.0 Media
---------------------------------------------------------------*/
-@import "media/media";
+//partials
+@import "partials/fonts";
+@import "partials/block_grid";

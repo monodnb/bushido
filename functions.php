@@ -8,6 +8,9 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
+
+global $bsdfw;
+
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
@@ -47,6 +50,9 @@ function bushido_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 960, 960, true ); // Normal post thumbnails
+
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -77,6 +83,64 @@ function bushido_setup() {
 }
 endif; // bushido_setup
 add_action( 'after_setup_theme', 'bushido_setup' );
+
+/**
+ * Add SVG upload support.
+ */
+function cc_mime_types( $mimes ){
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
+
+/**
+ * Custom walker.
+ *
+ */
+
+class bsd_walker extends Walker_Nav_Menu
+{
+	function start_el(&$output, $object, $depth = 0, $args = Array() , $current_object_id = 0) {
+
+		global $wp_query;
+
+		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+
+		$class_names = $value = '';
+
+		$classes = empty( $object->classes ) ? array() : (array) $object->classes;
+		$classes = array_slice($classes,1);
+
+		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $object ) );
+		$class_names = ' class="'. esc_attr( $class_names ) . '"';
+
+
+
+		$attributes  = ! empty( $object->attr_title ) ? ' title="'  . esc_attr( $object->attr_title ) .'"' : '';
+		$attributes .= ! empty( $object->target )     ? ' target="' . esc_attr( $object->target     ) .'"' : '';
+		$attributes .= ! empty( $object->xfn )        ? ' rel="'    . esc_attr( $object->xfn        ) .'"' : '';
+		$attributes .= ! empty( $object->url )        ? ' href="'   . esc_attr( $object->url        ) .'"' : '';
+
+
+		if($object->object == 'page')
+		{              
+			$bsd_menu_icon = get_post_meta($object->object_id, "bsd_menu_icon", true);
+			
+			$output .= $indent . '<li id="menu-item-'. $object->ID . '"' . $value . $class_names .'>';
+			
+			$object_output = $args->before;
+			$object_output .= '<a class="material"'. $attributes .' bubble-size="big">';
+			$object_output .= $args->link_before .$bsd_menu_icon;
+			$object_output .= apply_filters( 'the_title', $object->title, $object->ID ).$args->link_after;
+			$object_output .= '</a>';
+			$object_output .= $args->after;   
+
+			$output .= apply_filters( 'walker_nav_menu_start_el', $object_output, $object, $depth, $args );         
+		}
+
+	}
+}
+
 
 /**
  * Register widget area.
@@ -136,3 +200,19 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+/**
+* Include Meta Box Framework.
+*/
+define( 'RWMB_URL', trailingslashit( get_template_directory_uri() . '/inc/meta-box' ) );
+define( 'RWMB_DIR', trailingslashit( get_template_directory() . '/inc/meta-box' ) );
+
+require_once RWMB_DIR . 'meta-box.php';
+include_once get_template_directory() . '/inc/meta-boxes.php';
+/**
+ * Include Redux Framework.
+ */
+include_once get_template_directory() . '/inc/options-init.php';
+/**
+ * Load Portfolio.
+ */
+require get_template_directory() . '/inc/bushido-portfolio.php';
