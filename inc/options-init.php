@@ -248,12 +248,12 @@ if (!class_exists('admin_folder_Redux_Framework_config')) {
                         'type'      => 'image_select',
                         'compiler'  => true,
                         'title'     => __('Main Layout', 'redux-framework-bsd'),
-                        'subtitle'  => __('Select main layout. Choose between Fullscreen or Boxed.', 'redux-framework-bsd'),
+                        'subtitle'  => __('Select main layout. Choose between Fullscreen or Boxed. Default is "Boxed"', 'redux-framework-bsd'),
                         'options'   => array(
                             '1' => array('alt' => 'Fullscreen','img' => ReduxFramework::$_url . 'assets/img/1col.png'),
                             '2' => array('alt' => 'Boxed','img' => ReduxFramework::$_url . 'assets/img/3cm.png')
                         ),
-                        'default'   => '1',
+                        'default'   => '2',
                     ),
                     array(
                         'id'        => 'opt-favicon',
