@@ -1,0 +1,25 @@
+#card-content{
+    position: fixed;
+    top: 0;
+    margin: auto;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    .revealed-card{
+        position:relative;
+        width:100%;
+        height: 100%;
+        overflow: auto;
+        .revealed-card-hero{
+            height: 40%;
+            overflow: hidden;
+            text-align: center;
+            @extend .z-depth-1;
+            img{
+                width:100%;
+            }
+        }
+    }
+}
+

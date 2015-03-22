@@ -24,7 +24,7 @@ global $bsdfw;
     <div id="works-pagination" class="row" max-num-pages="<?php echo $wp_query->max_num_pages; ?>">
        <?php next_posts_link(); ?>
     </div>
-    <div id="card-content" class="row"></div>
+    <div id="card-content" class="row grey lighten-5"></div>
 </div>
 
 <?php get_footer(); ?>

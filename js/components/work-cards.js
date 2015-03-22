@@ -37,7 +37,7 @@
 
         // Event delegation
         $card.on("click", showCardOverlay);
-        $action.on("click", flipCard);
+        $action.on("click", revealCard);
 
     });
 
@@ -53,22 +53,12 @@
         $thisInfo.toggleClass("on off");
     }
 
-    function flipCard(startEvent) {
-        console.log("tadadada");
+    function revealCard(startEvent) {
         var $this = $(this),
-            $thisCard = $this.closest(".work-card"),
-            $thisOverlay = $this.find(".work-card-overlay"),
-            $thisInfo = $this.find(".work-card-info"),
-            $thisImg = $this.find(".work-card-image"),
-            $thisGrid = $this.closest(".block-grid");
-        $thisCard.css("height", $thisCard.outerHeight());
-        $thisCard.addClass("active");
-        $thisCard.clone().appendTo($cardContent);
-        $cardContent.css({
-            top: $thisCard.offset().top,
-            position: "absolute"
-        });
-        $cardContent.find(".work-card").children().removeClass("on off");
+            thisLink = $this.find("img").attr("href");
+        console.log(thisLink);
+        $body.addClass("no-scroll");
+        $cardContent.load(thisLink +" .revealed-card");
     }
 
 
