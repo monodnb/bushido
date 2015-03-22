@@ -6,6 +6,8 @@
     }
     & > .tile{
         float: left;
+        position: relative;
+        overflow: hidden;
         @include box-sizing(border-box);
         padding: $gutter-width / 2;
     }

@@ -14,7 +14,6 @@
 
 
         // Initial setup
-        
 
         // Event delegation
 

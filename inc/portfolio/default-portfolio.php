@@ -26,12 +26,12 @@
         $image_url = wp_get_attachment_image_src($image_id,'post-thumb', true);
 	?>
 	<div class="tile">
-    <div class="work-card">
+    <div class="work-card no-select">
         <div class="work-card-image">
-            <img src="<?php echo $image_url[0] ?>" alt="">
+            <img class="responsive-img" src="<?php echo $image_url[0] ?>" alt="">
         </div>
-        <div class="work-card-overlay off"></div>
-        <div class="work-card-info">
+        <div class="work-card-info cleared">
+            <div class="work-card-overlay"></div>
             <div class="work-card-action">
                 <img class="responsive-img" src="http://localhost/wp-content/uploads/2015/03/play.svg">
             </div>
