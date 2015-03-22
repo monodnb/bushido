@@ -49,9 +49,8 @@ function bushido_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 960, 960, true ); // Normal post thumbnails
+    add_image_size( 'card', 300, 300, false );
 
 
 	// This theme uses wp_nav_menu() in one location.

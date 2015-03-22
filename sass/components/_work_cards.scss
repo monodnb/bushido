@@ -1,63 +1,73 @@
 .work-card {
-    @extend .card;
-    margin: 0;
-    .work-card-image {
-        @extend .card-image;
-        filter: grayscale(1);
+    position: relative;
+    overflow: hidden;
+    @include box-sizing(border-box);
+    @include border-radius(2px);
+    @extend .z-depth-1;
+    .work-card-image{
         overflow: hidden;
+        & > img {
+            width:100%;
+            height: auto;
+        }
+    }
+    .work-card-overlay{
+        position: absolute;
+        margin: auto;
+        top: -25%;
+        bottom: -25%;
+        right: 0;
+        left: -25%;
+        border-radius: 50%;
+        width: 150%;
+        height: 150%;
+        @include transition(transform .3s ease);
+        &.off{
+            transform: scale(0);
+        }
+        &.on{
+            transform: scale(1);
+        }
     }
     .work-card-info {
         position: absolute;
-        z-index:1;
+        top: 0;
         height: 100%;
         width: 100%;
         transform-origin: center;
-        pointer-events: none;
-        &.cleared{
-            opacity: 0;
-            transform: scale3d(0.05,0.05,0.05);
-            transition: transform 0s .3s ease, opacity .3s ease;
+        @include transition(transform .3s ease);
+        &.on{
+            transform: scale(1);
         }
-        &.expanded{
-            opacity:1;
-            transform: scale3d(1,1,1);
-            transition: transform .6s ease, opacity .1s ease;
+        &.off{
+            transform: scale(0);
         }
-        
-        .work-card-overlay {
-            position: absolute;
-            margin: auto;
-            top: -25%;
-            left: -25%;
-            width: 150%;
-            height: 150%;
-            border-radius: 50%;
-            transform: scale3d(1,1,1);
-            z-index:1;
-            transition: transform 3.38s ease;
-        }
-        
-        .work-card-title {
-            @extend .card-title;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            padding: $card-padding;
-            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
-        }
-        .work-card-action {
-            position: absolute;
-            margin: auto;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 40px;
-            height: 40px;
-            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
-                img{
-                    width:100%;
-                }
+    }
+
+    .work-card-title{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: $card-padding;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .work-card-action{
+        position: absolute;
+        margin: auto;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width:15%;
+        height:15%;
+        max-width:50px;
+        max-height:50px;
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+        img{
+            width:100%;
         }
     }
 }
