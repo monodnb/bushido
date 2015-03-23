@@ -45,6 +45,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+    &.full{
+        margin-left: 0;
+        margin-right: 0;
+    }
 
   // Clear floating children
   &:after {

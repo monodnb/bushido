@@ -1,6 +1,6 @@
 (function ($, window, document) {
 
-    // The $ is now locally scoped 
+    // The $ is now locally scoped
     $(function () {
 
         // DOM ready!
@@ -20,8 +20,6 @@
 
     });
 
-
     // Functions
-    
 
 }(window.jQuery, window, document)); // Fully reference jQuery after this point.

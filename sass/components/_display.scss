@@ -1,6 +1,19 @@
-.hide{
-    display:none;
+.hide {
+    display: none;
 }
-.no-scroll{
+
+.invisible {
+    visibility: hidden;
+}
+
+.no-scroll {
     overflow: hidden;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.opaque{
+    opacity: 1;
 }

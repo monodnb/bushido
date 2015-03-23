@@ -2004,7 +2004,7 @@ ul {
     z-index: 100000;
     /* Above WP toolbar. */ }
 
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, ul.side-nav, .work-card, #card-content .revealed-card .revealed-card-hero {
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, ul.side-nav, .work-card, #card-content .revealed-card .card-hero {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
@@ -4770,6 +4770,9 @@ span.badge {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px; }
+  .row.full {
+    margin-left: 0;
+    margin-right: 0; }
   .row:after {
     content: "";
     display: table;
@@ -7728,8 +7731,17 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .hide {
   display: none; }
 
+.invisible {
+  visibility: hidden; }
+
 .no-scroll {
   overflow: hidden; }
+
+.transparent {
+  opacity: 0; }
+
+.opaque {
+  opacity: 1; }
 
 .work-card {
   position: relative;
@@ -7741,7 +7753,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     overflow: hidden; }
     .work-card .work-card-image > img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      -webkit-filter: grayscale(1);
+              filter: grayscale(1); }
   .work-card .work-card-overlay {
     position: absolute;
     margin: auto;
@@ -7812,18 +7826,33 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   left: 0;
   height: 100%;
   width: 100%;
-  pointer-events: none; }
+  overflow: auto; }
   #card-content .revealed-card {
     position: relative;
     width: 100%;
-    height: 100%;
-    overflow: auto; }
-    #card-content .revealed-card .revealed-card-hero {
-      height: 40%;
+    height: 100%; }
+    #card-content .revealed-card .card-hero {
       overflow: hidden;
-      text-align: center; }
-      #card-content .revealed-card .revealed-card-hero img {
-        width: 100%; }
+      text-align: center;
+      position: relative;
+      top: 0; }
+      #card-content .revealed-card .card-hero .hero-image {
+        width: 100%;
+        margin: auto;
+        left: 0;
+        right: 0; }
+    #card-content .revealed-card .card-hero-overlay {
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      will-change: opacity; }
+    #card-content .revealed-card .row {
+      margin: 20px; }
+    #card-content .revealed-card .card-panel-section {
+      border-bottom: 1px solid #f7f7f7; }
+    #card-content .revealed-card .card-title {
+      font-size: 16px; }
 
 .block-grid.collapsed > .tile {
   padding: 0; }
