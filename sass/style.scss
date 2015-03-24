@@ -14,7 +14,6 @@
 // components
 @import "components/global";
 @import "components/icons-material-design";
-@import "components/grid";
 @import "components/navbar";
 @import "components/roboto";
 @import "components/typography";
@@ -36,10 +35,11 @@
 @import "components/date_picker/default.scss";
 @import "components/date_picker/default.date.scss";
 @import "components/date_picker/default.time.scss";
-@import "components/display.scss";
-@import "components/work_cards.scss";
-@import "components/revealed_cards.scss";
 
 //partials
+@import "partials/grid";
+@import "partials/display.scss";
+@import "partials/work_cards.scss";
+@import "partials/revealed_cards.scss";
 @import "partials/fonts";
 @import "partials/block_grid";
