@@ -1,0 +1,33 @@
+/*** Colors ***/
+$primary-color: color("teal", "base") !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+
+$secondary-color: color("teal", "lighten-1") !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+$link-color: color("light-blue", "darken-1") !default;
+
+
+/*** Fonts ***/
+$roboto-font-path: "font/roboto/" !default;
+$noto-font-path: "font/noto-sans/" !default;
+$icons-font-path: "font/material-design-icons/" !default;
+
+$thin: 100 !default;
+$light: 300 !default;
+$regular: 400 !default;
+$medium: 500 !default;
+$bold: 700 !default;
+$black: 900 !default;
+
+/*** Navbar ***/
+$toolbar-height: 64px !default;
+$toolbar-height-mobile: 56px !default;
+
+// Grid Variables
+$num-cols: 12 !default;
+$baseline-grid: 8px !default;
+
+/*** Cards ***/
+$card-padding: $baseline-grid*2 !default;

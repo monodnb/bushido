@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,900italic,900,400italic,100,700italic,300,700,500italic,100italic,300italic,400);
+
+
+.black54{
+    color: rgb(117, 117, 117);
+    color: rgba(0,0,0,0.54);
+}
+
+.black87{
+    color: rgb(33,33,33);
+    color: rgba(0,0,0,0.87);
+}
+
+.white54{
+    color: rgb(147,147,147);
+}
+
+.white87{
+    color: rgb(231,231,231);
+}
+
+html{
+    @extend .black87;
+    font-family: "Roboto","Noto", sans-serif;
+    font-size: 14px;
+    font-weight: $regular;
+    line-height: 1.72;
+}
+
+.d4{
+    font-size: 8rem;
+    line-height: 1.03;
+    font-weight: $light;
+    @extend .black54;
+}
+.d3{
+    font-size: 4rem;
+    line-height: 1.04;
+    @extend .black54;
+}
+.d2{
+    font-size: 3.21rem;
+    line-height: 1.06;
+    @extend .black54;
+}
+.d1{
+    font-size: 2.43rem;
+    line-height: 1.18;
+    @extend .black54;
+}
+.headline{
+    font-size: 1.71rem;
+    line-height: 1.33;
+}
+.title{
+    font-size: 1.43rem;
+    font-weight: $medium;
+    line-height: 1.43;
+}
+.subhead{
+    font-size: 1.14rem;
+    line-height: 1.75;
+}
+.b2{
+    font-size: 1rem;
+    font-weight: $medium;
+}
+.b1{
+    font-size: 1rem;
+}
+.caption{
+    font-size: 0.86rem;
+    @extend .black54;
+}
+
+button{
+    @extend .b2;
+    text-transform: uppercase;
+}
+
+// Text Styles
+em { font-style: italic; }
+strong { font-weight: 700; }
+small { font-size: 75%; }
+.light { font-weight: 300; }

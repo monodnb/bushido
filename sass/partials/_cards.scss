@@ -1,0 +1,17 @@
+.card {
+    position: relative;
+    margin: 0;
+    padding: $card-padding;
+    @include box-sizing(border-box);
+    @include border-radius(2px);
+    @extend .z-depth-1;
+
+    .card-image{
+        overflow: hidden;
+        & > img {
+            width:100%;
+            height: auto;
+            filter: grayscale(1);
+        }
+    }
+}
