@@ -23,13 +23,13 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'bushido' ); ?></a>
 
 	<header id="header"></header><!-- #header -->
-    
-    <?php global $bsdfw;
-        switch($bsdfw['opt-layout']) {
-            case '1' : $containerClass = "container fullwidth"; break;
-            case '2' : $containerClass = "container"; break;	
-            default : $containerClass = "container"; break;
-        }
-    ?>
-    
-	<div id="content" class="<?php echo $containerClass ?>">
+
+	<?php global $bsdfw;
+		switch($bsdfw['opt-layout']) {
+			case '1' : $containerClass = "layout fullwidth"; break;
+			case '2' : $containerClass = "layout"; break;
+			default : $containerClass = "layout"; break;
+		}
+	?>
+
+	<div id="layout" class="<?php echo $containerClass ?>">

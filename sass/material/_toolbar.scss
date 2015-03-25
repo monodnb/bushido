@@ -1,0 +1,17 @@
+#toolbar{
+	@extend .paper-sheet;
+	width: 100%;
+	height: $toolbar-height-mobile;
+	line-height: $toolbar-height-mobile;
+	&.waterfall {
+		margin-top: 0;
+		margin-bottom: 0;
+		@extend .resting-shadow;
+	}
+}
+@media #{$medium-and-up} {
+  #toolbar {
+	height: $toolbar-height;
+	line-height: $toolbar-height;
+  }
+}
