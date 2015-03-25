@@ -16,39 +16,3 @@
     line-height: $toolbar-height;
   }
 }
-
-
-.floating-action{
-    @extend .paper;
-    @extend .z1-shadow;
-    @extend .animated-shadow;
-    position: absolute;
-    bottom: $toolbar-height-mobile / -2;
-    width: $toolbar-height-mobile;
-    height: $toolbar-height-mobile;
-    line-height: $toolbar-height-mobile;
-    border-radius: 50%;
-    z-index:1000;
-    margin: auto;
-    left:0;
-    right:0;
-    &.left{
-        right: auto;
-        left: $baseline-grid*2;
-    }
-    &.right {
-        left:auto;
-        right: $baseline-grid*2;
-    }
-    &:hover{
-        @extend .z2-shadow;
-    }
-}
-@media #{$medium-and-up} {
-  .floating-action {
-    width: $toolbar-height;
-    height: $toolbar-height;
-    line-height: $toolbar-height;
-  }
-}
-

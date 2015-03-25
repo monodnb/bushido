@@ -3,3 +3,9 @@
     -moz-box-shadow: $args1, $args2;
     box-shadow: $args1, $args2;
 }
+
+@mixin natural-shadow($key, $ambient) {
+    -webkit-box-shadow: $key, $ambient;
+    -moz-box-shadow: $key, $ambient;
+    box-shadow: $key, $ambient;
+}
