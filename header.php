@@ -32,4 +32,4 @@
 		}
 	?>
 
-	<div id="layout" class="<?php echo $containerClass ?>">
+	<div id="whiteframe" class="<?php echo $containerClass ?>">

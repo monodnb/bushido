@@ -50,12 +50,20 @@
 @import "partials/work_cards.scss";
 @import "partials/revealed_cards.scss";*/
 
-//material
+//Variables
 @import "material/variables";
+
+// Reset
+@import "material/normalize";
+
+
+@import "material/global";
 @import "material/mixins";
 @import "material/shadows";
-//@import "material/colors";
+@import "material/colors";
 @import "material/typography";
 @import "material/layout";
 @import "material/toolbar";
 @import "material/floating_action_button";
+
+@import "material/test";

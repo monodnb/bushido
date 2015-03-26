@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+//Default styles
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+// classic clearfix
+.clearfix {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img,
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+}

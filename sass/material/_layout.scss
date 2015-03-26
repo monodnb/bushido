@@ -1,4 +1,4 @@
-#layout {
+#whiteframe {
 	margin: 0 auto;
 	width: 100%;
 }
@@ -7,9 +7,9 @@
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: $square-grid-size*4;
-	padding-right: $square-grid-size*4;
-	margin-bottom: $baseline-grid-size*2;
+	padding-left: $square-grid-size;
+	padding-right: $square-grid-size;
+	margin-bottom: $baseline-grid-size;
 	&.collapsed{
 
 	}
@@ -21,17 +21,21 @@
 		position: absolute;
 		@extend .resting-shadow;
 	}
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
 	&:after {
-		content: "";
-		display: table;
 		clear: both;
 	}
 	.col {
 		float: left;
 		box-sizing: border-box;
+        padding: $square-grid-size;
 		$i: 1;
-		@while $i <= $num-cols {
-			$perc: unquote(100 / ($num-cols / $i) + "%");
+		@while $i <= $cols-num {
+			$perc: unquote(100 / ($cols-num / $i) + "%");
 			&.s#{$i} {
 				width: $perc;
 				margin-left: 0;
@@ -39,8 +43,8 @@
 			$i: $i + 1;
 		}
 		$i: 1;
-		@while $i <= $num-cols {
-			$perc: unquote(100 / ($num-cols / $i) + "%");
+		@while $i <= $cols-num {
+			$perc: unquote(100 / ($cols-num / $i) + "%");
 			&.offset-s#{$i} {
 				margin-left: $perc;
 			}
@@ -48,8 +52,8 @@
 		}
 		@media #{$medium-and-up} {
 			$i: 1;
-			@while $i <= $num-cols {
-				$perc: unquote(100 / ($num-cols / $i) + "%");
+			@while $i <= $cols-num {
+				$perc: unquote(100 / ($cols-num / $i) + "%");
 				&.m#{$i} {
 					width: $perc;
 					margin-left: 0;
@@ -57,8 +61,8 @@
 				$i: $i + 1;
 			}
 			$i: 1;
-			@while $i <= $num-cols {
-				$perc: unquote(100 / ($num-cols / $i) + "%");
+			@while $i <= $cols-num {
+				$perc: unquote(100 / ($cols-num / $i) + "%");
 				&.offset-m#{$i} {
 					margin-left: $perc;
 				}
@@ -67,8 +71,8 @@
 		}
 		@media #{$large-and-up} {
 			$i: 1;
-			@while $i <= $num-cols {
-				$perc: unquote(100 / ($num-cols / $i) + "%");
+			@while $i <= $cols-num {
+				$perc: unquote(100 / ($cols-num / $i) + "%");
 				&.l#{$i} {
 					width: $perc;
 					margin-left: 0;
@@ -76,8 +80,8 @@
 				$i: $i + 1;
 			}
 			$i: 1;
-			@while $i <= $num-cols {
-				$perc: unquote(100 / ($num-cols / $i) + "%");
+			@while $i <= $cols-num {
+				$perc: unquote(100 / ($cols-num / $i) + "%");
 				&.offset-l#{$i} {
 					margin-left: $perc;
 				}

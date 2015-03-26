@@ -7,10 +7,13 @@
 
 get_header(); ?>
 
-<div id="frontpage" data-role="page">
-    <div class="row red"></div>
-    <div class="row"></div>
-    <div class="row">
+    <div class="paper-sheet">
+        <div class="s4 col"><img width="490px" height="490px" src="http://isabelarodrigues.com/wp-content/uploads/2015/01/lovita2_0002_Layer-Comp-3-960x960.jpg" alt=""></div>
+        <div class="s4 col"><img src="http://isabelarodrigues.com/wp-content/uploads/2015/01/lovita2_0002_Layer-Comp-3-960x960.jpg" alt=""></div>
+        <div class="s4 col"><img src="http://isabelarodrigues.com/wp-content/uploads/2015/01/lovita2_0002_Layer-Comp-3-960x960.jpg" alt=""></div>
+    </div>
+    <div class="paper-sheet"></div>
+    <div class="paper-sheet">
         <div class="card" style="background-color: rgb(108, 171, 218);">
             <div class="card-image">
                 <img src="http://isabelarodrigues.com/wp-content/uploads/2015/01/lovita2_0002_Layer-Comp-3-960x960.jpg" alt="">
@@ -28,26 +31,15 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
+
 <div class="card-action floating-action-button" style="top:40%;"></div>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    <div class="row"></div>
+
+    <div class="paper-sheet"></div>
     <button>Agree</button>
     <button class="colored">Disagree</button>
     <button class="">Accept</button>
     <button class="flat colored">Ok</button>
     <button class="flat">Cancel</button>
-    </br>
-</div>
+
 
 <?php get_footer(); ?>

@@ -15,7 +15,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 /*** Align variables ***/
 $baseline-grid-size: 8px !default;
-$square-grid-size: 8px !default;
+$square-grid-size: 4px !default;
 
 /*** Colors ***/
 
@@ -38,4 +38,6 @@ $toolbar-height: 64px !default;
 $toolbar-height-mobile: 56px !default;
 
 
+/*** Grid ***/
 
+$cols_num: 12 !default;
