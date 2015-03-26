@@ -1,38 +1,37 @@
-
-.floating-action-button{
-    @extend .paper;
-    @extend .resting-shadow;
-    background-color: #fff;
-    bottom: $toolbar-height-mobile / -2;
-    width: $toolbar-height-mobile;
-    height: $toolbar-height-mobile;
-    line-height: $toolbar-height-mobile;
-    position: absolute;
-    margin: auto;
-    left:0;
-    right:0;
-    border-radius: 50%;
-    z-index:1000;
-    @include transition (all .28s cubic-bezier(.4,0,.2,1));
-    &.colored{
-        background-color: $primary-color;
-    }
-    &.pull-left{
-        right: auto;
-        left: $baseline-grid*2;
-    }
-    &.pull-right {
-        left:auto;
-        right: $baseline-grid*2;
-    }
-    &:hover{
-        @extend .floating-shadow;
-    }
+.floating-action-button {
+	background-color: #fff;
+	bottom: $toolbar-height-mobile / -2;
+	width: $toolbar-height-mobile;
+	height: $toolbar-height-mobile;
+	line-height: $toolbar-height-mobile;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	border-radius: 50%;
+	z-index: 1000;
+	@extend .resting-shadow;
+	transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	&.colored {
+		background-color: teal;
+	}
+	&.pull-left {
+		right: auto;
+		left: 0;
+	}
+	&.pull-right {
+		left: auto;
+		right: 0;
+	}
+	&:hover {
+		@extend .floating-shadow;
+	}
 }
+
 @media #{$medium-and-up} {
-  .floating-action-button {
-    width: $toolbar-height;
-    height: $toolbar-height;
-    line-height: $toolbar-height;
-  }
+	.floating-action-button {
+		width: $toolbar-height;
+		height: $toolbar-height;
+		line-height: $toolbar-height;
+	}
 }

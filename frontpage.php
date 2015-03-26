@@ -1,45 +1,60 @@
-<?php
-/**
- * Template name: Frontpage
- *
- * @package bushido
- */
+<?php /** * Template name: Frontpage * * @package bushido */ get_header(); ?>
 
-get_header(); ?>
+<div class="paper-sheet seamed">
+	<div class="s4 col"><img width="490px" height="490px" src="<?php echo get_template_directory_uri() . '/img/lovita2_truck.jpg'?>" alt="">
+	</div>
+	<div class="s4 col"><img src="<?php echo get_template_directory_uri() . '/img/illegal_6-1024x1024.jpg'?>" alt="">
+	</div>
+	<div class="s4 col"><img src="<?php echo get_template_directory_uri() . '/img/nl2-960x960.jpg'?>" alt="">
+	</div>
+</div>
+<div class="paper-sheet">
+	<div class="s4 col"><img width="490px" height="490px" src="<?php echo get_template_directory_uri() . '/img/illegal_8-1024x1024.jpg'?>" alt="">
+	</div>
+	<div class="s4 col"><img src="<?php echo get_template_directory_uri() . '/img/shakeira1-960x960.jpg'?>" alt="">
+	</div>
+	<div class="s4 col"><img src="<?php echo get_template_directory_uri() . '/img/villa_roma_girl-1024x1024.jpg'?>" alt="">
+	</div>
+</div>
+<div class="paper-sheet">
+	<div class="s12 col">
+		<div class="card">
+			<div class="card-media">
+				<img src="<?php echo get_template_directory_uri() . '/img/nl2-960x960.jpg'?>" alt="">
+				<div class="card-scrim"></div>
+				<span class="card-title">Material Design</span>
+			</div>
+			<div class="card-support-text">
+				<span>Card content type and quantity can vary greatly, depending on the content...</span>
+			</div>
+			<div class="card-actions">
+				<div class="action">Share</div>
+				<div class="action">Explore</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-    <div class="paper-sheet">
-        <div class="s4 col"><img width="490px" height="490px" src="http://isabelarodrigues.com/wp-content/uploads/2015/01/lovita2_0002_Layer-Comp-3-960x960.jpg" alt=""></div>
-        <div class="s4 col"><img src="http://isabelarodrigues.com/wp-content/uploads/2015/01/lovita2_0002_Layer-Comp-3-960x960.jpg" alt=""></div>
-        <div class="s4 col"><img src="http://isabelarodrigues.com/wp-content/uploads/2015/01/lovita2_0002_Layer-Comp-3-960x960.jpg" alt=""></div>
-    </div>
-    <div class="paper-sheet"></div>
-    <div class="paper-sheet">
-        <div class="card" style="background-color: rgb(108, 171, 218);">
-            <div class="card-image">
-                <img src="http://isabelarodrigues.com/wp-content/uploads/2015/01/lovita2_0002_Layer-Comp-3-960x960.jpg" alt="">
-            </div>
-            <div class="card-overlay" style="background-color: rgb(108, 171, 218);"></div>
-            <div class="card-info">
-                <span class="card-title">El Dulce de Loco</span>
-            </div>
-            <div class="card-action floating-action-button right">
-                <svg viewBox="0 0 32 32">
-                    <g filter="">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#4d1de92ded6458f1a7587b8f4e20a644"></use>
-                    </g>
-                </svg>
-            </div>
-        </div>
-    </div>
-
-<div class="card-action floating-action-button" style="top:40%;"></div>
-
-    <div class="paper-sheet"></div>
-    <button>Agree</button>
-    <button class="colored">Disagree</button>
-    <button class="">Accept</button>
-    <button class="flat colored">Ok</button>
-    <button class="flat">Cancel</button>
+</br>
+</br>
+</br>
+</br>
+<div class="paper-sheet">
+	<button>Agree</button>
+	<button class="colored">Disagree</button>
+	<button class="">Accept</button>
+	<button class="flat colored">Ok</button>
+	<button class="flat">Cancel</button>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 
 
 <?php get_footer(); ?>

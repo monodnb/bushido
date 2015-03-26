@@ -1,7 +1,26 @@
+/*** Global ***/
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+/*** Align variables ***/
+$baseline-grid-size: 8px !default;
+$square-grid-size: 4px !default;
+
 /*** Colors ***/
 $primary-color: color("teal", "base") !default;
-$primary-color-light: lighten($primary-color, 15%) !default;
-$primary-color-dark: darken($primary-color, 15%) !default;
+$primary-color-light: color("teal", "lighten-3") !default;
+$primary-color-dark: color("teal", "darken-3") !default;
 
 $secondary-color: color("teal", "lighten-1") !default;
 $success-color: color("green", "base") !default;
@@ -9,7 +28,7 @@ $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
 
 
-/*** Fonts ***/
+/*** Typography ***/
 $roboto-font-path: "font/roboto/" !default;
 $noto-font-path: "font/noto-sans/" !default;
 $icons-font-path: "font/material-design-icons/" !default;
@@ -25,9 +44,9 @@ $black: 900 !default;
 $toolbar-height: 64px !default;
 $toolbar-height-mobile: 56px !default;
 
-// Grid Variables
-$num-cols: 12 !default;
-$baseline-grid: 8px !default;
+
+/*** Grid ***/
+$cols_num: 12 !default;
 
 /*** Cards ***/
-$card-padding: $baseline-grid*2 !default;
+$card-padding: $square-grid-size*4;

@@ -22,7 +22,9 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'bushido' ); ?></a>
 
-	<header id="header"></header><!-- #header -->
+	<header id="header">
+		<div id="toolbar" class="grey lighten-4"></div>
+	</header><!-- #header -->
 
 	<?php global $bsdfw;
 		switch($bsdfw['opt-layout']) {
