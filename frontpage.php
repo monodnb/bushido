@@ -28,8 +28,8 @@
 				<span>Card content type and quantity can vary greatly, depending on the content...</span>
 			</div>
 			<div class="card-actions">
-				<div class="action">Share</div>
-				<div class="action">Explore</div>
+				<button class="flat grey lighten-5">Share</button>
+				<button class="flat grey lighten-5">Explore</button>
 			</div>
 		</div>
 	</div>

@@ -50,6 +50,7 @@
 	.card-actions {
 		@extend .card-area;
 		border-top: 1px solid rgba(0, 0, 0, 0.12);
+		padding-left: 0;
 		.action {
 			display: inline-block;
 			@extend .b2;
@@ -60,6 +61,9 @@
 			&:hover {
 				color: lighten(color("orange", "accent-2"), 20%);
 			}
+		}
+		button{
+			margin: 0;
 		}
 	}
 	&.colored {

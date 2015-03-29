@@ -1951,7 +1951,7 @@ img, video {
 
 html {
   font-family: "Roboto","Noto", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400; }
 
 .d4 {
@@ -2463,7 +2463,7 @@ button {
   box-sizing: border-box;
   border-radius: 2px;
   background-color: #fff;
-  padding: 0 12px;
+  padding: 0 16px;
   margin: 6px 0 6px 6px;
   color: #009688;
   border: none;
@@ -2555,7 +2555,8 @@ button {
       padding: 16px;
       color: #fafafa; }
   .card .card-actions {
-    border-top: 1px solid rgba(0, 0, 0, 0.12); }
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    padding-left: 0; }
     .card .card-actions .action {
       display: inline-block;
       color: #ffab40;
@@ -2565,6 +2566,8 @@ button {
       text-transform: uppercase; }
       .card .card-actions .action:hover {
         color: #ffd8a6; }
+    .card .card-actions button {
+      margin: 0; }
   .card.colored .card-area, .card.colored .card-support-text, .card.colored .card-actions {
     background-color: #fafafa;
     color: #009688; }
