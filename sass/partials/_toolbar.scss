@@ -1,17 +1,26 @@
-#toolbar{
+#toolbar {
 	@extend .paper-sheet;
 	width: 100%;
-	height: $toolbar-height-mobile;
-	line-height: $toolbar-height-mobile;
+	height: $toolbar-height;
+	line-height: $toolbar-height;
 	&.waterfall {
 		margin-top: 0;
 		margin-bottom: 0;
 		@extend .resting-shadow;
 	}
+	&.extended {
+		height: $extended-toolbar-height;
+	}
+	&.floating{
+		@extend .resting-shadow;
+		height: $floating-toolbar-height;
+		margin: $content-padding;
+	}
 }
+
 @media #{$medium-and-up} {
-  #toolbar {
-	height: $toolbar-height;
-	line-height: $toolbar-height;
-  }
+	#toolbar {
+		height: $toolbar-height-large;
+		line-height: $toolbar-height-large;
+	}
 }

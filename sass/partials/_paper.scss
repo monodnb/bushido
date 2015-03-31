@@ -1,0 +1,10 @@
+.paper {
+	&.seamed {
+		margin: 0;
+		padding: 0;
+		@extend .flat-shadow;
+	}
+	&.stepped {
+		position: absolute;
+	}
+}

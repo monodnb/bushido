@@ -14,8 +14,9 @@ $medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
 $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
 
 /*** Align variables ***/
-$baseline-grid-size: 8px !default;
-$square-grid-size: 4px !default;
+$main-grid-size: 8px !default;
+$inner-grid-size: 4px !default;
+$content-padding: 4*$inner-grid-size !default;
 
 /*** Colors ***/
 $primary-color: color("teal", "base") !default;
@@ -41,12 +42,14 @@ $bold: 700 !default;
 $black: 900 !default;
 
 /*** Navbar ***/
-$toolbar-height: 64px !default;
-$toolbar-height-mobile: 56px !default;
+$toolbar-height: 7*$main-grid-size !default;
+$toolbar-height-large: 8*$main-grid-size !default;
+$extended-toolbar-height: 10*$main-grid-size !default;
+$floating-toolbar-height: 6*$main-grid-size !default;
+
 
 
 /*** Grid ***/
 $cols_num: 12 !default;
 
 /*** Cards ***/
-$card-padding: $square-grid-size*4;

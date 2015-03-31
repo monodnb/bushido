@@ -1,9 +1,9 @@
 .floating-action-button {
 	background-color: #fff;
-	bottom: $toolbar-height-mobile / -2;
-	width: $toolbar-height-mobile;
-	height: $toolbar-height-mobile;
-	line-height: $toolbar-height-mobile;
+	bottom: $toolbar-height / -2;
+	width: $toolbar-height;
+	height: $toolbar-height;
+	line-height: $toolbar-height;
 	position: absolute;
 	margin: auto;
 	left: 0;
@@ -17,11 +17,11 @@
 	}
 	&.pull-left {
 		right: auto;
-		left: 0;
+		left: $content-padding;
 	}
 	&.pull-right {
 		left: auto;
-		right: 0;
+		right: $content-padding;
 	}
 	&:hover {
 		@extend .floating-shadow;
@@ -30,8 +30,8 @@
 
 @media #{$medium-and-up} {
 	.floating-action-button {
-		width: $toolbar-height;
-		height: $toolbar-height;
-		line-height: $toolbar-height;
+		width: $toolbar-height-large;
+		height: $toolbar-height-large;
+		line-height: $toolbar-height-large;
 	}
 }

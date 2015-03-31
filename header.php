@@ -34,4 +34,4 @@
 		}
 	?>
 
-	<div id="whiteframe" class="<?php echo $containerClass ?>">
+	<div id="content-area" class="<?php echo $containerClass ?>">
