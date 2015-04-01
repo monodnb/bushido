@@ -28,13 +28,11 @@ html{
 
 .d4{
 	font-size: 8rem;
-	line-height: 1.03;
 	font-weight: $light;
 	@extend .black54;
 }
 .d3{
 	font-size: 4rem;
-	line-height: 1.04;
 	@extend .black54;
 }
 .d2{
@@ -54,11 +52,10 @@ html{
 .title{
 	font-size: 1.43rem;
 	font-weight: $medium;
-	line-height: 1.43;
 }
 .subhead{
 	font-size: 1.14rem;
-	line-height: 1.75;
+	line-height: 1.5;
 }
 .b2{
 	font-size: 1rem;
@@ -67,7 +64,7 @@ html{
 }
 .b1{
 	font-size: 1rem;
-	line-height: 1.72;
+	line-height: 1.42;
 }
 .caption{
 	font-size: 0.86rem;

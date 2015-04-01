@@ -1920,7 +1920,7 @@ img, video {
   -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
 
-.flat-shadow, .paper.seamed, button.flat, button.flat:hover {
+.flat-shadow, .row.seamed, .paper.seamed, button.flat, button.flat:hover {
   box-shadow: 0 0, 0 0; }
 
 .resting-shadow, #toolbar.waterfall, #toolbar.floating, button, .floating-action-button, .card {
@@ -1956,12 +1956,10 @@ html {
 
 .d4 {
   font-size: 8rem;
-  line-height: 1.03;
   font-weight: 300; }
 
 .d3 {
-  font-size: 4rem;
-  line-height: 1.04; }
+  font-size: 4rem; }
 
 .d2 {
   font-size: 3.21rem;
@@ -1977,12 +1975,11 @@ html {
 
 .title, .card .card-media .card-title, .tile .tile-info .tile-title, .works-tile .tile-info .tile-title {
   font-size: 1.43rem;
-  font-weight: 500;
-  line-height: 1.43; }
+  font-weight: 500; }
 
 .subhead, .tile .tile-info .tile-subhead, .works-tile .tile-info .tile-subhead {
   font-size: 1.14rem;
-  line-height: 1.75; }
+  line-height: 1.5; }
 
 .b2, button, .card .card-actions .action {
   font-size: 1rem;
@@ -1991,7 +1988,7 @@ html {
 
 .b1, .card .card-support-text {
   font-size: 1rem;
-  line-height: 1.72; }
+  line-height: 1.42; }
 
 .caption {
   font-size: 0.86rem; }
@@ -2023,6 +2020,11 @@ small {
   /*padding-left: $inner-grid-size;
 	padding-right: $inner-grid-size;*/
   margin-bottom: 8px; }
+  .row.seamed {
+    margin: 0;
+    padding: 0; }
+  .row.stepped {
+    position: absolute; }
   .row:before, .row:after {
     content: "";
     display: table; }
