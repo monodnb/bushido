@@ -14,6 +14,11 @@
 
 
         // Initial setup
+        $("#bottom-sheet").css({
+            transform: "translateY(0)",
+            webkitTransform: "translateY(0)",
+            msTransform: "translateY(0)",
+        });
 
         // Event delegation
 
