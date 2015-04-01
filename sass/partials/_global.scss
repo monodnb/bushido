@@ -3,34 +3,37 @@
 //Default styles
 
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    li {
-        list-style-type: none;
-    }
+	list-style-type: none;
+	padding: 0;
+	li {
+		list-style-type: none;
+	}
 }
 
 // classic clearfix
 .clearfix {
-    clear: both;
+	clear: both;
 }
 
 a {
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 img,
 video {
-    display: block;
-    width: 100%;
-    height: auto;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.no-scroll{
+	overflow: hidden;
 }

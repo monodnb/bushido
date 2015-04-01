@@ -7,7 +7,7 @@
 		position: relative;
 		width: 100%;
 		padding: $content-padding;
-		background-color: #fafafa;
+		background-color: #fff;
 		@extend .black87;
 		margin: 0;
 	}
@@ -31,7 +31,7 @@
 			background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 			opacity: 0.1;
 			width: 100%;
-			height: $content-padding*5;
+			height: $content-padding * 5;
 		}
 		.card-title {
 			position: absolute;
@@ -39,15 +39,42 @@
 			left: 0;
 			padding: $content-padding;
 			@extend .title;
-			color: #fafafa;
+			color: #fff;
 		}
 	}
 	.card-support-text {
 		@extend .card-area;
 		@extend .b1;
+		&.truncated {
+			height: 72px;
+			overflow: hidden;
+			/*&:first-line {
+				color: red;
+			}*/
+			&:before,
+			&:after {
+				content: "";
+				display: table;
+			}
+			&:before {
+				content: "...";
+				display: table;
+				height: $content-padding;
+				padding: 0 $content-padding;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background-color: #fff;
+				width: 100%;
+			}
+			&:after {
+				clear: both;
+			}
+		}
 	}
 	.card-actions {
 		@extend .card-area;
+		height: 7 * $main-grid-size;
 		border-top: 1px solid rgba(0, 0, 0, 0.12);
 		padding: $content-padding;
 		.action {
@@ -61,13 +88,18 @@
 				color: lighten(color("orange", "accent-2"), 20%);
 			}
 		}
-		button{
+		.pull-right {
+			float: right;
+			margin-left: $content-padding;
+			margin-right: 0;
+		}
+		button {
 			margin: 0;
 		}
 	}
 	&.colored {
 		.card-area {
-			background-color: #fafafa;
+			background-color: #fff;
 			color: $primary-color;
 		}
 		.card-actions {

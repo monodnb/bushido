@@ -50,7 +50,7 @@ function bushido_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-    add_image_size( 'card', 300, 300, false );
+	add_image_size( 'card', 300, 300, false );
 
 
 	// This theme uses wp_nav_menu() in one location.
@@ -122,19 +122,19 @@ class bsd_walker extends Walker_Nav_Menu
 
 
 		if($object->object == 'page')
-		{              
+		{
 			$bsd_menu_icon = get_post_meta($object->object_id, "bsd_menu_icon", true);
-			
+
 			$output .= $indent . '<li id="menu-item-'. $object->ID . '"' . $value . $class_names .'>';
-			
+
 			$object_output = $args->before;
 			$object_output .= '<a class="material"'. $attributes .' bubble-size="big">';
 			$object_output .= $args->link_before .$bsd_menu_icon;
 			$object_output .= apply_filters( 'the_title', $object->title, $object->ID ).$args->link_after;
 			$object_output .= '</a>';
-			$object_output .= $args->after;   
+			$object_output .= $args->after;
 
-			$output .= apply_filters( 'walker_nav_menu_start_el', $object_output, $object, $depth, $args );         
+			$output .= apply_filters( 'walker_nav_menu_start_el', $object_output, $object, $depth, $args );
 		}
 
 	}
@@ -164,21 +164,23 @@ add_action( 'widgets_init', 'bushido_widgets_init' );
  */
 function bushido_scripts() {
 	wp_enqueue_style( 'bushido-style', get_stylesheet_uri() );
-    
-    wp_deregister_script('jquery');
+
+	wp_deregister_script('jquery');
 
 	wp_register_script('jquery', ("http://code.jquery.com/jquery-latest.min.js"), false);
 
 	wp_enqueue_script('jquery');
 
 	wp_enqueue_script( 'bushido-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '', true );
-    
+
 	wp_enqueue_script( 'bushido-infinite-pagination', get_template_directory_uri() . '/js/infinite-pagination.js', array(), '', true );
-    
+
 	wp_enqueue_script( 'bushido-color-thief', get_template_directory_uri() . '/js/vendor/color-thief.js', array(), '', true );
-    
+
 	wp_enqueue_script( 'bushido-work-cards', get_template_directory_uri() . '/js/components/work-cards.js', array(), '', true );
-    
+
+	//wp_enqueue_script( 'bushido-truncate', get_template_directory_uri() . '/js/vendor/truncate.js', array(), '', true );
+
 	wp_enqueue_script( 'bushido-main', get_template_directory_uri() . '/js/main.js', array(), '', true );
 
 	wp_enqueue_script( 'bushido-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -235,13 +237,13 @@ require get_template_directory() . '/inc/bushido-portfolio.php';
 
  
   
-/* Pagination Function*/   
+/* Pagination Function*/
 function bushido_pagination($pages = '', $range = 4) {
 	$showitems = ($range * 2)+1;
-	
+
 	global $paged;
 	if(empty($paged)) $paged = 1;
-	
+
 	if($pages == '') {
 		global $wp_query;
 		$pages = $wp_query->max_num_pages;
@@ -249,19 +251,19 @@ function bushido_pagination($pages = '', $range = 4) {
 			$pages = 1;
 		}
 	}
-	
+
 
 		echo "<span class='allpages'>" . __('Page', 'bushido') . " ".$paged." " . __('of', 'bushido') . " ".$pages."</span>";
 		if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; " . __('First', 'bushido') . "</a>";
 		if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; " . __('Previous', 'bushido') . "</a>";
-		
+
 		for ($i=1; $i <= $pages; $i++) {
 			if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )) {
 				echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"next-page\">".$i."</a>";
 			}
 		}
-	
+
 		if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">" . __('Next', 'bushido') . " &rsaquo;</a>";
 		if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>" . __('Last', 'bushido') . " &raquo;</a>";
-	
+
 }

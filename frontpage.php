@@ -99,7 +99,7 @@
 				<div class="tile-info colored">
 					<span class="tile-title">Material Design</span>
 					<span class="tile-subhead">Paper craft</span>
-					<div class="tile-action"></div>
+					<div class="tile-action bs-trigger"></div>
 				</div>
 			</div>
 		</div>
@@ -111,7 +111,7 @@
 				<div class="tile-info light">
 					<span class="tile-title">Material Design</span>
 					<span class="tile-subhead">Paper craft</span>
-					<div class="tile-action">
+					<div class="tile-action bs-trigger">
 						<img src="<?php echo get_template_directory_uri() . '/img/icons/play.svg'?>" alt="">
 					</div>
 				</div>
@@ -125,7 +125,7 @@
 				<div class="tile-info light">
 					<span class="tile-title">Material Design</span>
 					<span class="tile-subhead">Paper craft</span>
-					<div class="tile-action">
+					<div class="tile-action bs-trigger">
 						<img src="<?php echo get_template_directory_uri() . '/img/icons/heart_full.svg'?>" alt="">
 					</div>
 				</div>
