@@ -24,3 +24,9 @@
 		line-height: $toolbar-height-large;
 	}
 }
+
+.toolbar-action{
+	@extend .headline;
+	line-height: $toolbar-height - $content-padding*2;
+	color: #fff;
+}

@@ -7,16 +7,13 @@
 	background-color: rgba(0, 0, 0, 0);
 	transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 	pointer-events: none;
-    &.active{
-        background-color: rgba(0, 0, 0, .5);
-    }
+	&.active{
+		background-color: rgba(0, 0, 0, .5);
+	}
 }
 
 #bottom-sheet {
 	position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
 	z-index: 3;
 	top: 0;
 	width: 100%;
@@ -25,27 +22,50 @@
 	overflow: auto;
 	transform: translateY(100%);
 	transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
-	.bs-media{
+	.bs-container{
 		position:relative;
+		width:100%;
+		height: 100%;
+		overflow: auto;
+	}
+	.bs-media{
+		position:fixed;
+		overflow: hidden;
+		min-height: $toolbar-height;
+		background-color: darkorange;
+		pointer-events: none;
 		.bs-scrim{
 			@extend .scrim;
-            position: absolute;
+			position: absolute;
 		}
 		.bs-title{
-            @extend .title;
+			@extend .title;
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			padding: $content-padding;
 			color: #fafafa;
 		}
+		.bs-actions{
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: $content-padding;
+			color: #fafafa;
+			.action{
+				margin-left: $content-padding;
+				@extend .toolbar-action;
+			}
+		}
 	}
-	.bottom-sheet-content{
+	.bs-content{
 		@extend #content-area;
-        flex: 1;
+		position: absolute;
+		z-index: -1;
+		margin-top: 360px;
 		background-color: color("grey", "lighten-5");
 	}
-    &.active{
-        transform: translateY(0);
-    }
+	&.active{
+		transform: translateY(0);
+	}
 }

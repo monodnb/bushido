@@ -12,12 +12,19 @@
 
 	<div class="bottom-sheet-overlay"></div>
 	<div id="bottom-sheet">
+	<div class="bs-container">
 		<div class="bs-media">
 			<img src="<?php echo get_template_directory_uri() . '/img/nl2-960x960.jpg'?>" alt="">
-			<div class="bs-scrim"></div>
+			<div class="bs-scrim bottom"></div>
+			<div class="bs-scrim top"></div>
 			<span class="bs-title">Material Design</span>
+			<div class="bs-actions">
+				<i class="action mdi-action-favorite-outline"></i>
+				<i class="action mdi-social-share"></i>
+				<i class="action mdi-navigation-more-vert"></i>
+			</div>
 		</div>
-		<div class="bottom-sheet-content">
+		<div class="bs-content">
 			<div class="row">
 				<div class="s12 col">
 					<div class="card">
@@ -36,7 +43,36 @@ Vix te principes consectetuer. An soleat probatus honestatis has, solet aliquand
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="s12 col">
+					<div class="card">
+						<div class="card-support-text">
+							<?php
+								// If comments are open or we have at least one comment, load up the comment template
+								if ( comments_open() || get_comments_number() ) :
+									comments_template();
+								endif;
+							?>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="s12 col">
+					<div class="card">
+						<div class="card-support-text">
+							<?php
+								// If comments are open or we have at least one comment, load up the comment template
+								if ( comments_open() || get_comments_number() ) :
+									comments_template();
+								endif;
+							?>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+	</div>
 	</div>
 
 	<footer id="footer"></footer><!-- #footer -->
