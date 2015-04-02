@@ -25,14 +25,8 @@
 	// Functions
 	function showBottomSheet() {
 		$body.addClass("no-scroll");
-		$("#bottom-sheet").css({
-			transform: "translateY(0)",
-			webkitTransform: "translateY(0)",
-			msTransform: "translateY(0)"
-		});
-		$(".bottom-sheet-overlay").css({
-			backgroundColor: "rgba(0, 0, 0, .5)"
-		});
+		$("#bottom-sheet").addClass("active");
+		$(".bottom-sheet-overlay").addClass("active");
 	}
 
 }(window.jQuery, window, document)); // Fully reference jQuery after this point.
