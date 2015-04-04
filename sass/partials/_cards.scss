@@ -1,6 +1,7 @@
 .card {
 	position: relative;
 	border-radius: 2px;
+	overflow: hidden;
 	@extend .resting-shadow;
 	.card-area {
 		display: block;
@@ -11,7 +12,6 @@
 		@extend .black87;
 		margin: 0;
 	}
-	.card-header {}
 	.card-media {
 		position: relative;
 		padding: 0;

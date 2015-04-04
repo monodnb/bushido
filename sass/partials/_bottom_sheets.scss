@@ -23,17 +23,23 @@
 	transform: translateY(100%);
 	transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
 	.bs-container{
-		position:relative;
 		width:100%;
 		height: 100%;
 		overflow: auto;
 	}
 	.bs-media{
 		position:fixed;
+		top:0;
 		overflow: hidden;
 		min-height: $toolbar-height;
 		background-color: darkorange;
 		pointer-events: none;
+		img{
+			position: absolute;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+		}
 		.bs-scrim{
 			@extend .scrim;
 			position: absolute;
@@ -52,6 +58,7 @@
 			right: 0;
 			padding: $content-padding;
 			color: #fafafa;
+			pointer-events: all;
 			.action{
 				margin-left: $content-padding;
 				@extend .toolbar-action;
@@ -60,8 +67,6 @@
 	}
 	.bs-content{
 		@extend #content-area;
-		position: absolute;
-		z-index: -1;
 		margin-top: 360px;
 		background-color: color("grey", "lighten-5");
 	}

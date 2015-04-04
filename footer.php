@@ -13,17 +13,6 @@
 	<div class="bottom-sheet-overlay"></div>
 	<div id="bottom-sheet">
 	<div class="bs-container">
-		<div class="bs-media">
-			<img src="<?php echo get_template_directory_uri() . '/img/nl2-960x960.jpg'?>" alt="">
-			<div class="bs-scrim bottom"></div>
-			<div class="bs-scrim top"></div>
-			<span class="bs-title">Material Design</span>
-			<div class="bs-actions">
-				<i class="action mdi-action-favorite-outline"></i>
-				<i class="action mdi-social-share"></i>
-				<i class="action mdi-navigation-more-vert"></i>
-			</div>
-		</div>
 		<div class="bs-content">
 			<div class="row">
 				<div class="s12 col">
@@ -70,6 +59,18 @@ Vix te principes consectetuer. An soleat probatus honestatis has, solet aliquand
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="bs-media" style="width: 360px; height: 360px">
+			<img src="<?php echo get_template_directory_uri() . '/img/tattoos.jpg'?>" alt="">
+			<div class="bs-media-overlay"></div>
+			<div class="bs-scrim bottom"></div>
+			<div class="bs-scrim top"></div>
+			<span class="bs-title">Material Design</span>
+			<div class="bs-actions">
+				<i class="action favorite mdi-action-favorite-outline"></i>
+				<i class="action share mdi-social-share"></i>
+				<i class="action close mdi-navigation-close"></i>
 			</div>
 		</div>
 	</div>

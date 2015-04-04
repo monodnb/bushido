@@ -177,7 +177,7 @@ function bushido_scripts() {
 
 	wp_enqueue_script( 'bushido-color-thief', get_template_directory_uri() . '/js/vendor/color-thief.js', array(), '', true );
 
-	wp_enqueue_script( 'bushido-work-cards', get_template_directory_uri() . '/js/components/work-cards.js', array(), '', true );
+	wp_enqueue_script( 'bushido-bottom-sheets', get_template_directory_uri() . '/js/components/bottom-sheets.js', array(), '', true );
 
 	//wp_enqueue_script( 'bushido-truncate', get_template_directory_uri() . '/js/vendor/truncate.js', array(), '', true );
 

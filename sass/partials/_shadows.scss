@@ -1,44 +1,44 @@
 /*
 .z1-shadow{
-    @include box-shadow-2(0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12));
+	@include box-shadow-2(0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12));
 }
 .z1-half-shadow{
-    @include box-shadow-2(0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15));
+	@include box-shadow-2(0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15));
 }
 .z2-shadow{
-    @include box-shadow-2(0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
+	@include box-shadow-2(0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
 }
 .z3-shadow{
-    @include box-shadow-2(0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19));
+	@include box-shadow-2(0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19));
 }*/
 .z4-shadow{
-    @include box-shadow-2(0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21));
+	@include box-shadow-2(0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21));
 }
 .z5-shadow{
-    @include box-shadow-2(0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22));
+	@include box-shadow-2(0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22));
 }
 
 .animated-shadow {
-    -webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flat-shadow{
-    @include natural-shadow(0 0, 0 0);
+	@include natural-shadow(0 0, 0 0);
 }
 
 .resting-shadow{
-    @include natural-shadow(0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12));
+	@include natural-shadow(0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12));
 }
 
 .raised-shadow{
-    @include natural-shadow(0 5px 11px 0 rgba(0, 0, 0, 0.18),  0 4px 15px 0 rgba(0, 0, 0, 0.15));
+	@include natural-shadow(0 5px 11px 0 rgba(0, 0, 0, 0.18),  0 4px 15px 0 rgba(0, 0, 0, 0.15));
 }
 
 .floating-shadow{
-    @include natural-shadow(0 8px 17px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19));
+	@include natural-shadow(0 8px 17px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19));
 }
 
 .elevated-shadow{
-    @include natural-shadow(0 12px 15px 0 rgba(0, 0, 0, 0.24),  0 17px 50px 0 rgba(0, 0, 0, 0.19));
+	@include natural-shadow(0 12px 15px 0 rgba(0, 0, 0, 0.24),  0 17px 50px 0 rgba(0, 0, 0, 0.19));
 }
