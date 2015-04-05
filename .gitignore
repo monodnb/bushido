@@ -73,3 +73,5 @@ node_modules/*
 .ftpsync_settings
 .remotesettings
 .remote-sync.json
+/gulp_ftpsync.json
+/deploy/

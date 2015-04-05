@@ -25,6 +25,7 @@ get_header(); ?>
 		<span class="support-text">Chambray Carles Terry Gibson balls plaid wolf. Disrupt fashion axe 90's quinoa +1 Neutra. Irony ethnic ennui McSweeney's, semiotics small batch squid direct trade. Readymade salvia Echo Park scenester. </span>
 	</div>
 </div>
+<div class="divider"></div>
 <div class="card">
 	<div class="media">
 		<img src="<?php echo get_template_directory_uri() . '/img/tattoos.jpg'?>" alt="">
@@ -33,12 +34,16 @@ get_header(); ?>
 		<span class="title">Design Minutes</span>
 	</div>
 </div>
-<div class="divider"></div>
+<div class="divider left-inset"></div>
 <div class="tile"></div>
-<div class="divider"></div>
+<div class="divider right-inset"></div>
 <div class="button"></div>
-<div class="divider"></div>
+<div class="divider full-bleed"></div>
+<div class="divider right-inset"></div>
+<div class="divider right-inset"></div>
+<div class="divider right-inset"></div>
+<div class="divider right-inset"></div>
 <div class="list"></div>
-<div class="divider"></div>
+<div class="divider left-inset"></div>
 
 <?php get_footer(); ?>
