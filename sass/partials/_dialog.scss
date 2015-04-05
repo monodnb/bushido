@@ -1,0 +1,38 @@
+#dialog-box{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .12);
+	transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	#dialog {
+		@extend .paper;
+		@extend .elevated-shadow;
+		@extend .z5-shadow;
+		position: relative;
+		  padding: 24px 24px 8px;
+		  margin: 0 40px;
+		  max-height: 300px;
+		& > .title {
+			@extend .title;
+		}
+		& > .actions{
+			box-sizing: content-box;
+			position: relative;
+			right: -16px;
+			width: 100%;
+			height: 6*$vertical-sizing;
+			text-align: right;
+			margin-top: 2*$vertical-sizing;
+			button{
+				margin: 6px 4px;
+				padding: 0 8px;
+			}
+		}
+	}
+
+}

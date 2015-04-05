@@ -14,11 +14,14 @@ $medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
 $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
 
 /*** Align variables ***/
-$main-grid-size: 8px !default;
-$inner-grid-size: 4px !default;
-$content-padding: 4*$inner-grid-size !default;
+$vertical-sizing: 8px !default;
+$vertical-keyline: 4px !default;
+$horizontal-margin: 0 16px !default;
+$content-padding: 16px !default;
+$grid-gutter: 4px !default;
 
 /*** Colors ***/
+
 $primary-color: color("teal", "base") !default;
 $primary-color-light: color("teal", "lighten-3") !default;
 $primary-color-dark: color("teal", "darken-3") !default;
@@ -27,6 +30,7 @@ $secondary-color: color("teal", "lighten-1") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
+
 
 
 /*** Typography ***/
@@ -42,10 +46,10 @@ $bold: 700 !default;
 $black: 900 !default;
 
 /*** Navbar ***/
-$toolbar-height: 7*$main-grid-size !default;
-$toolbar-height-large: 8*$main-grid-size !default;
-$extended-toolbar-height: 10*$main-grid-size !default;
-$floating-toolbar-height: 6*$main-grid-size !default;
+$toolbar-height: 7*$vertical-sizing !default;
+$toolbar-height-large: 8*$vertical-sizing !default;
+$extended-toolbar-height: 10*$vertical-sizing !default;
+$floating-toolbar-height: 6*$vertical-sizing !default;
 
 
 

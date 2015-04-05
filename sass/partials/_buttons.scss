@@ -3,7 +3,7 @@ button {
 	box-sizing: border-box;
 	border-radius: 2px;
 	background-color: #fff;
-	padding: 0 $inner-grid-size*4;
+	padding: $horizontal-margin;
 	margin: 6px 0 6px 6px;
 	color: $primary-color;
 	border: none;
@@ -37,6 +37,7 @@ button {
 	}
 	&.flat {
 		@extend .flat-shadow;
+		background-color: transparent;
 		&:hover {
 			@extend .flat-shadow;
 		}

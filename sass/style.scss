@@ -11,18 +11,21 @@
 // Partials
 @import "partials/global";
 @import "partials/mixins";
+@import "partials/whiteframes";
 @import "partials/shadows";
 @import "partials/icon_font";
 @import "partials/typography";
 @import "partials/layout";
+@import "partials/divider";
 @import "partials/paper";
+@import "partials/dialog";
+@import "partials/tiles";
+@import "partials/cards";
 @import "partials/bottom_sheets";
 @import "partials/grid";
 @import "partials/toolbar";
 @import "partials/buttons";
 @import "partials/floating_action_button";
-@import "partials/cards";
-@import "partials/tiles";
 @import "partials/works_tile";
 //@import "partials/form";
 

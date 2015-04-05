@@ -1,6 +1,6 @@
 .grid {
 	&.collapsed {
-		padding: $inner-grid-size;
+		padding: $grid-gutter;
 		& > .cell {
 			padding: 0;
 			margin: 0;
@@ -10,7 +10,7 @@
 		float: left;
 		position: relative;
 		box-sizing: border-box;
-		padding: $inner-grid-size;
+		padding: $grid-gutter;
 	}
 	$i: 1;
 	@while $i <= $cols-num {

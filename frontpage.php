@@ -1,4 +1,11 @@
-<?php /** * Template name: Frontpage * * @package bushido */ get_header(); ?>
+<?php
+/**
+* Template name: Frontpage
+*
+* @package bushido
+*/
+
+get_header(); ?>
 
 <div class="row">
 	<div class="s12 m6 l4 col"><img width="490px" height="490px" src="<?php echo get_template_directory_uri() . '/img/lovita2_truck.jpg'?>" alt="">

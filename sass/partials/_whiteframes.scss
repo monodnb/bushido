@@ -1,0 +1,54 @@
+$base-color: #eeeeee;
+$bg-color: #fafafa;
+$toolbar-color: #e0e0e0;
+$type-color-primary: rgba(0, 0, 0, 0.87);
+$type-color-secondary: rgba(0, 0, 0, 0.54);
+$type-color-disabled: rgba(0, 0, 0, 0.26);
+$divider-color: rgba(0, 0, 0, 0.12);
+
+body.light-theme {
+	background-color: $base-color;
+	color: $type-color-primary;
+	.secondary {
+		color: $type-color-secondary;
+	}
+	.disabled {
+		color: $type-color-disabled;
+	}
+	#toolbar{
+		background-color: $toolbar-color;
+	}
+	.divider {
+		background-color: $divider-color;
+	}
+	.paper{
+		background-color: $bg-color;
+	}
+}
+
+body.dark-theme {
+	$base-color: #303030;
+	$bg-color: #424242;
+	$toolbar-color: #212121;
+	$type-color-primary: rgba(255, 255, 255, 1);
+	$type-color-secondary: rgba(255, 255, 255, 0.7);
+	$type-color-disabled: rgba(255, 255, 255, 0.3);
+	$divider-color: rgba(255, 255, 255, 0.12);
+	background-color: $base-color;
+	color: $type-color-primary;
+	.secondary {
+		color: $type-color-secondary;
+	}
+	.disabled {
+		color: $type-color-disabled;
+	}
+	#toolbar{
+		background-color: $toolbar-color;
+	}
+	.divider {
+		background-color: $divider-color;
+	}
+	.paper{
+		background-color: $bg-color;
+	}
+}
