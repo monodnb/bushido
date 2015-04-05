@@ -18,6 +18,14 @@ body.light-theme {
 	#toolbar{
 		background-color: $toolbar-color;
 	}
+	.chip{
+		&.closed, &.pressed{
+			background-color: $toolbar-color;
+		}
+		&.focused, &:hover, &:focus, &.activated, &:active{
+			background-color: $bg-color;
+		}
+	}
 	.divider {
 		background-color: $divider-color;
 	}
@@ -44,6 +52,14 @@ body.dark-theme {
 	}
 	#toolbar{
 		background-color: $toolbar-color;
+	}
+	.chip{
+		&.closed, &.pressed{
+			background-color: $toolbar-color;
+		}
+		&.focused, &:hover, &:focus, &.activated, &:active{
+			background-color: $bg-color;
+		}
 	}
 	.divider {
 		background-color: $divider-color;

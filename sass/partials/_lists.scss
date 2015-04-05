@@ -1,0 +1,49 @@
+.lines-list {
+	@extend .paper;
+	padding: 0;
+	li {
+		.avatar, .supporting-text, .action {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.supporting-text {
+			padding: $horizontal-margin;
+		}
+		.title {
+			@extend .subhead;
+			font-weight: normal;
+			margin: 0;
+			max-width: 200px;
+			overflow: auto;
+			text-overflow: ellipsis;
+		}
+		.content {
+			@extend .b1;
+			@extend .secondary;
+			max-width: 200px;
+			overflow: auto;
+			text-overflow: cut;
+		}
+		.action {
+			float: right;
+			margin: $vertical-sizing 0;
+		}
+		&.activated {
+			.content {
+				color: rgba(255, 255, 255, 0.7);
+			}
+		}
+	}
+	.single-line {
+		padding: ($content-padding / 2) $content-padding;
+		height: 7 * $vertical-sizing;
+	}
+	.two-line {
+		padding: $content-padding;
+		height: 9 * $vertical-sizing;
+	}
+	.three-line {
+		padding: $content-padding;
+		height: 11 * $vertical-sizing;
+	}
+}

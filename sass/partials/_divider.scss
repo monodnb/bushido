@@ -10,14 +10,11 @@
 	margin: $vertical-sizing 0;
 	height: 1px;
 	&.full-bleed{
-		width: 100%;
 	}
 	&.left-inset{
-		width: 100%;
-		right: 18*$vertical-keyline;
+		margin-right: 18*$vertical-keyline;
 	}
 	&.right-inset{
-		width: 100%;
-		left: 18*$vertical-keyline;
+		margin-left: 18*$vertical-keyline;
 	}
 }

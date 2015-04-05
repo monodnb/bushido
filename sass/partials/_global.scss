@@ -10,6 +10,14 @@ html {
 	box-sizing: inherit;
 }
 
+ul {
+	list-style-type: none;
+	padding: 0;
+	li {
+		list-style-type: none;
+	}
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -41,9 +49,9 @@ html {
 	text-decoration: none;
 	top: 5px;
 	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
+	z-index: 100000;
+	/* Above WP toolbar. */
 }
-
 
 ul {
 	list-style-type: none;
@@ -69,6 +77,7 @@ video {
 	width: 100%;
 	height: auto;
 }
-.no-scroll{
+
+.no-scroll {
 	overflow: hidden;
 }

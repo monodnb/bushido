@@ -5,6 +5,7 @@ var gulp = require("gulp"), //http://gulpjs.com/
 	minifycss = require("gulp-minify-css"), //https://www.npmjs.org/package/gulp-minify-css
 	rename = require("gulp-rename"), //https://www.npmjs.org/package/gulp-rename
 	changed = require("gulp-changed"),
+	concatCss = require('gulp-concat-css'),
 	ftp = require("vinyl-ftp"),
 	ftpAuth = require("./gulp_ftpsync.json"),
 	runSequence = require('run-sequence'),
@@ -38,9 +39,14 @@ gulp.task("deploy", function () {
 		.pipe(gulp.dest("deploy"));
 	log("Done");
 })
+gulp.task("concat", function () {
+  return gulp.src("img/**/*.css")
+	.pipe(concatCss("_md_icons.scss"))
+	.pipe(gulp.dest('sass/partials/'));
+});
 
 gulp.task("watch", function () {
 	log("Watching files for modifications");
 	gulp.watch(sassFiles, ["sass"]);
-	gulp.watch(allFiles, ["deploy"]);
+	//gulp.watch(allFiles, ["deploy"]);
 });

@@ -8,9 +8,9 @@
 	.title {
 		@extend .headline;
 		display: block;
-		margin-bottom: 1.5*$vertical-sizing;
+		margin-bottom: 1.5 * $vertical-sizing;
 	}
-	.support-text {
+	.content {
 		@extend .subhead;
 		@extend .secondary;
 		display: block;
@@ -18,10 +18,11 @@
 	.media {
 		position: relative;
 		margin: -$content-padding;
-		&>img{
+		& > img {
 			position: relative;
 		}
-		&>.title{
+		& > .title {
+			@extend .headline;
 			position: absolute;
 			color: #fff;
 			bottom: 0;
@@ -42,6 +43,35 @@
 		&.bottom {
 			bottom: 0;
 			background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+		}
+	}
+	.avatar {
+		position: relative;
+		width: 5 * $vertical-sizing;
+		height: 5 * $vertical-sizing;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+	.action {
+		position: relative;
+		width: 3 * $vertical-sizing;
+		height: 3 * $vertical-sizing;
+		overflow: hidden;
+	}
+	&.activated, .activated{
+		background-color: $primary-color;
+		color: rgba(255, 255, 255, 1);
+		.secondary {
+			color: rgba(255, 255, 255, 0.7);
+		}
+		.content {
+			color: rgba(255, 255, 255, 0.7);
+		}
+		.disabled {
+			color: rgba(255, 255, 255, 0.3);
+		}
+		.divider {
+			background-color: rgba(255, 255, 255, 0.12);
 		}
 	}
 }
