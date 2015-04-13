@@ -10,11 +10,11 @@
 }
 .z3-shadow{
 	@include box-shadow-2(0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19));
-}*/
+}
 .z4-shadow{
 	@include box-shadow-2(0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21));
 }
-/*.z5-shadow{
+.z5-shadow{
 	@include box-shadow-2(0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22));
 }*/
 
@@ -39,14 +39,10 @@
 	@include natural-shadow(0 8px 17px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19));
 }
 
-/*.elevated-shadow{
-	@include natural-shadow(0 12px 15px 0 rgba(0, 0, 0, 0.3),  0 17px 50px 0 rgba(0, 0, 0, 0.22));
-}*/
 .elevated-shadow{
-	@include natural-shadow(0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22));
+	@include natural-shadow(0 14px 20px 0 rgba(0, 0, 0, 0.21),  0 20px 40px 0 rgba(0, 0, 0, 0.21));
 }
 
-
-.toolbar-shadow{
-	@include natural-shadow(0 1px 1.5px 0 rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.24));
+.dialog-shadow{
+	@include natural-shadow(0 27px 24px 0 rgba(0, 0, 0, 0.23), 0 40px 77px 0 rgba(0, 0, 0, 0.22));
 }

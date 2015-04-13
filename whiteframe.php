@@ -94,7 +94,7 @@ get_header(); ?>
 	<span class="title">Design Minutes</span>
 </div>
 <div class="divider full-bleed"></div>
-<div class="chip activated lines-list">
+<div class="chip activated">
 	<div class="media">
 		<img src="<?php echo get_template_directory_uri() . '/img/tattoos.jpg'?>" alt="">
 	</div>
@@ -143,16 +143,75 @@ get_header(); ?>
 		<div class="action svg-ic_more_vert_24px"></div>
 	</li>
 </ul>
-<div class="divider left-inset"></div>
-<div class="tile"></div>
-<div class="divider right-inset"></div>
-<div class="button"></div>
 <div class="divider full-bleed"></div>
-<div class="divider right-inset"></div>
-<div class="divider right-inset"></div>
-<div class="divider right-inset"></div>
-<div class="divider right-inset"></div>
-<div class="list"></div>
-<div class="divider left-inset"></div>
+<div class="row">
+	<div class="s2 col">
+		<div class="checkbox"></div>
+	</div>
+	<div class="s2 col">
+		<div class="checkbox checked"></div>
+	</div>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div class="row">
+	<div class="tile paper flat-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;"></div>
+	<div class="tile paper resting-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;;"></div>
+	<div class="tile paper raised-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;"></div>
+	<div class="tile paper floating-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;;"></div>
+	<div class="tile paper elevated-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;"></div>
+	<div class="tile paper dialog-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;"></div>
+</div>
+</br>
+</br>
+<div class="row">
+	<div class="s3 col">
+		<div class="switch">
+			<div class="switch-bar"></div>
+			<div class="switch-button"></div>
+		</div>
+	</div>
+	<div class="s3 col">
+		<div class="switch on">
+			<div class="switch-bar"></div>
+			<div class="switch-button"></div>
+		</div>
+	</div>
+	<div class="s3 col">
+		<div class="switch disabled">
+			<div class="switch-bar"></div>
+			<div class="switch-button"></div>
+		</div>
+	</div>
+	<div class="s3 col">
+		<div class="switch on disabled">
+			<div class="switch-bar"></div>
+			<div class="switch-button"></div>
+		</div>
+	</div>
+</div>
+</br>
+<div class="row">
+	<div class="slider">
+		<div class="slider-bar"></div>
+		<div class="slider-button"></div>
+		<div class="slider-pin"></div>
+	</div>
+</div>
+</br>
+</br>
+</br>
+</br>
+<div class="row">
+	<div class="slider">
+		<div class="slider-bar"></div>
+		<div class="slider-button pin"></div>
+	</div>
+</div>
 
 <?php get_footer(); ?>

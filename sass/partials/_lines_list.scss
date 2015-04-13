@@ -2,6 +2,7 @@
 	@extend .paper;
 	padding: 0;
 	li {
+		@include faster-transition (background-color, opacity);
 		.avatar, .supporting-text, .action {
 			display: inline-block;
 			vertical-align: middle;
@@ -14,15 +15,15 @@
 			font-weight: normal;
 			margin: 0;
 			max-width: 200px;
-			overflow: auto;
+			overflow: hidden;
 			text-overflow: ellipsis;
 		}
 		.content {
 			@extend .b1;
 			@extend .secondary;
 			max-width: 200px;
-			overflow: auto;
-			text-overflow: cut;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 		.action {
 			float: right;
@@ -45,5 +46,11 @@
 	.three-line {
 		padding: $content-padding;
 		height: 11 * $vertical-sizing;
+		.action {
+			margin: 2*$vertical-sizing 0;
+		}
+	}
+	li:hover{
+
 	}
 }

@@ -1,11 +1,36 @@
 @mixin box-shadow-2($args1, $args2) {
-    -webkit-box-shadow: $args1, $args2;
-    -moz-box-shadow: $args1, $args2;
-    box-shadow: $args1, $args2;
+	-webkit-box-shadow: $args1, $args2;
+	-moz-box-shadow: $args1, $args2;
+	box-shadow: $args1, $args2;
 }
 
 @mixin natural-shadow($key, $ambient) {
-    -webkit-box-shadow: $key, $ambient;
-    -moz-box-shadow: $key, $ambient;
-    box-shadow: $key, $ambient;
+	-webkit-box-shadow: $key, $ambient;
+	-moz-box-shadow: $key, $ambient;
+	box-shadow: $key, $ambient;
+}
+
+@mixin slowest-transition($property1, $property2) {
+	transition: $property1 1.28s cubic-bezier(0.4, 0, 0.2, 1), $property2 1.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin slower-transition($property1, $property2) {
+	transition: $property .98s cubic-bezier(0.4, 0, 0.2, 1), $property2 .98s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin slow-transition($property1, $property2) {
+	transition: $property1 .68s cubic-bezier(0.4, 0, 0.2, 1), $property2 .68s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin normal-transition($property1, $property2) {
+	transition: $property1 .38s cubic-bezier(0.4, 0, 0.2, 1), $property2 .38s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin fast-transition($property1, $property2) {
+	transition: $property1 .28s cubic-bezier(0.4, 0, 0.2, 1), $property2 .28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin faster-transition($property1, $property2) {
+	transition: $property1 .18s cubic-bezier(0.4, 0, 0.2, 1), $property2 .18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin fastest-transition($property1, $property2) {
+	transition: $property1 .08s cubic-bezier(0.4, 0, 0.2, 1), $property2 .08s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin lightning-transition($property1, $property2) {
+	transition: $property1 .03s cubic-bezier(0.4, 0, 0.2, 1), $property2 .03s cubic-bezier(0.4, 0, 0.2, 1);
 }

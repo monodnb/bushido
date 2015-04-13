@@ -179,7 +179,7 @@ function bushido_scripts() {
 
 	wp_enqueue_script( 'bushido-bottom-sheets', get_template_directory_uri() . '/js/components/bottom-sheets.js', array(), '', true );
 
-	//wp_enqueue_script( 'bushido-truncate', get_template_directory_uri() . '/js/vendor/truncate.js', array(), '', true );
+	wp_enqueue_script( 'bushido-list-controls', get_template_directory_uri() . '/js/components/list-controls.js', array(), '', true );
 
 	wp_enqueue_script( 'bushido-main', get_template_directory_uri() . '/js/main.js', array(), '', true );
 

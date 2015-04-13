@@ -26,6 +26,16 @@ body.light-theme {
 			background-color: $bg-color;
 		}
 	}
+	.lines-list>li{
+		&.focused, &:hover, &:focus{
+			background-color: $toolbar-color;
+		}
+		&.activated{
+			&.focused, &:hover, &:focus{
+				background-color: $primary-color;
+			}
+		}
+	}
 	.divider {
 		background-color: $divider-color;
 	}
@@ -59,6 +69,16 @@ body.dark-theme {
 		}
 		&.focused, &:hover, &:focus, &.activated, &:active{
 			background-color: $bg-color;
+		}
+	}
+	.lines-list>li{
+		&.focused, &:hover, &:focus{
+			background-color: $toolbar-color;
+		}
+		&.activated{
+			&.focused, &:hover, &:focus{
+				background-color: $primary-color;
+			}
 		}
 	}
 	.divider {
