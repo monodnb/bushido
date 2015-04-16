@@ -1931,7 +1931,8 @@ a {
 
 img, video {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto; }
 
 .no-scroll {
@@ -1940,7 +1941,7 @@ img, video {
 body.light-theme {
   background-color: #eeeeee;
   color: rgba(0, 0, 0, 0.87); }
-  body.light-theme .secondary, body.light-theme .paper .content, .paper body.light-theme .content, body.light-theme .lines-list .content, .lines-list body.light-theme .content, body.light-theme #dialog-box #dialog .content, #dialog-box #dialog body.light-theme .content, body.light-theme .card .content, .card body.light-theme .content, body.light-theme .chip .title, .chip body.light-theme .title, body.light-theme .chip i, .chip body.light-theme i, body.light-theme .chip #dialog-box #dialog .title, .chip #dialog-box #dialog body.light-theme .title, body.light-theme #dialog-box #dialog .chip .title, #dialog-box #dialog .chip body.light-theme .title, body.light-theme .chip .tile .tile-info .tile-title, .chip .tile .tile-info body.light-theme .tile-title, body.light-theme .tile .tile-info .chip .tile-title, .tile .tile-info .chip body.light-theme .tile-title, body.light-theme .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info body.light-theme .tile-title, body.light-theme .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip body.light-theme .tile-title, body.light-theme .chip #bottom-sheet .bs-media .bs-title, .chip #bottom-sheet .bs-media body.light-theme .bs-title, body.light-theme #bottom-sheet .bs-media .chip .bs-title, #bottom-sheet .bs-media .chip body.light-theme .bs-title {
+  body.light-theme .secondary, body.light-theme .paper .content, .paper body.light-theme .content, body.light-theme .lines-list .content, .lines-list body.light-theme .content, body.light-theme #dialog-box #dialog .content, #dialog-box #dialog body.light-theme .content, body.light-theme .card .content, .card body.light-theme .content, body.light-theme .chip .title, .chip body.light-theme .title, body.light-theme .chip i, .chip body.light-theme i, body.light-theme .chip #dialog-box #dialog .title, .chip #dialog-box #dialog body.light-theme .title, body.light-theme #dialog-box #dialog .chip .title, #dialog-box #dialog .chip body.light-theme .title, body.light-theme .chip .tile .tile-info .tile-title, .chip .tile .tile-info body.light-theme .tile-title, body.light-theme .tile .tile-info .chip .tile-title, .tile .tile-info .chip body.light-theme .tile-title, body.light-theme .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info body.light-theme .tile-title, body.light-theme .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip body.light-theme .tile-title {
     color: rgba(0, 0, 0, 0.54); }
   body.light-theme .disabled {
     color: rgba(0, 0, 0, 0.26); }
@@ -1962,7 +1963,7 @@ body.light-theme {
 body.dark-theme {
   background-color: #303030;
   color: white; }
-  body.dark-theme .secondary, body.dark-theme .paper .content, .paper body.dark-theme .content, body.dark-theme .lines-list .content, .lines-list body.dark-theme .content, body.dark-theme #dialog-box #dialog .content, #dialog-box #dialog body.dark-theme .content, body.dark-theme .card .content, .card body.dark-theme .content, body.dark-theme .chip .title, .chip body.dark-theme .title, body.dark-theme .chip i, .chip body.dark-theme i, body.dark-theme .chip #dialog-box #dialog .title, .chip #dialog-box #dialog body.dark-theme .title, body.dark-theme #dialog-box #dialog .chip .title, #dialog-box #dialog .chip body.dark-theme .title, body.dark-theme .chip .tile .tile-info .tile-title, .chip .tile .tile-info body.dark-theme .tile-title, body.dark-theme .tile .tile-info .chip .tile-title, .tile .tile-info .chip body.dark-theme .tile-title, body.dark-theme .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info body.dark-theme .tile-title, body.dark-theme .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip body.dark-theme .tile-title, body.dark-theme .chip #bottom-sheet .bs-media .bs-title, .chip #bottom-sheet .bs-media body.dark-theme .bs-title, body.dark-theme #bottom-sheet .bs-media .chip .bs-title, #bottom-sheet .bs-media .chip body.dark-theme .bs-title {
+  body.dark-theme .secondary, body.dark-theme .paper .content, .paper body.dark-theme .content, body.dark-theme .lines-list .content, .lines-list body.dark-theme .content, body.dark-theme #dialog-box #dialog .content, #dialog-box #dialog body.dark-theme .content, body.dark-theme .card .content, .card body.dark-theme .content, body.dark-theme .chip .title, .chip body.dark-theme .title, body.dark-theme .chip i, .chip body.dark-theme i, body.dark-theme .chip #dialog-box #dialog .title, .chip #dialog-box #dialog body.dark-theme .title, body.dark-theme #dialog-box #dialog .chip .title, #dialog-box #dialog .chip body.dark-theme .title, body.dark-theme .chip .tile .tile-info .tile-title, .chip .tile .tile-info body.dark-theme .tile-title, body.dark-theme .tile .tile-info .chip .tile-title, .tile .tile-info .chip body.dark-theme .tile-title, body.dark-theme .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info body.dark-theme .tile-title, body.dark-theme .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip body.dark-theme .tile-title {
     color: rgba(255, 255, 255, 0.7); }
   body.dark-theme .disabled {
     color: rgba(255, 255, 255, 0.3); }
@@ -10372,15 +10373,15 @@ html {
   font-size: 2.43rem;
   line-height: 1.18; }
 
-.headline, .paper .title, .lines-list .title, .card .title, .paper i, .lines-list i, #dialog-box #dialog i, .card i, #dialog-box #dialog .title, .paper .tile .tile-info .tile-title, .tile .tile-info .paper .tile-title, .lines-list .tile .tile-info .tile-title, .tile .tile-info .lines-list .tile-title, #dialog-box #dialog .tile .tile-info .tile-title, .tile .tile-info #dialog-box #dialog .tile-title, .card .tile .tile-info .tile-title, .tile .tile-info .card .tile-title, .paper .works-tile .tile-info .tile-title, .works-tile .tile-info .paper .tile-title, .lines-list .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list .tile-title, #dialog-box #dialog .works-tile .tile-info .tile-title, .works-tile .tile-info #dialog-box #dialog .tile-title, .card .works-tile .tile-info .tile-title, .works-tile .tile-info .card .tile-title, .paper #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media .paper .bs-title, .lines-list #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media .lines-list .bs-title, #dialog-box #dialog #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media #dialog-box #dialog .bs-title, .card #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media .card .bs-title, .paper .media > .title, .lines-list .media > .title, .card .media > .title, .paper .media > i, .lines-list .media > i, .card .media > i, .toolbar-action, #bottom-sheet .bs-media .bs-actions .action {
+.headline, .paper .title, .lines-list .title, .card .title, .paper i, .lines-list i, #dialog-box #dialog i, .card i, #dialog-box #dialog .title, .paper .tile .tile-info .tile-title, .tile .tile-info .paper .tile-title, .lines-list .tile .tile-info .tile-title, .tile .tile-info .lines-list .tile-title, #dialog-box #dialog .tile .tile-info .tile-title, .tile .tile-info #dialog-box #dialog .tile-title, .card .tile .tile-info .tile-title, .tile .tile-info .card .tile-title, .paper .works-tile .tile-info .tile-title, .works-tile .tile-info .paper .tile-title, .lines-list .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list .tile-title, #dialog-box #dialog .works-tile .tile-info .tile-title, .works-tile .tile-info #dialog-box #dialog .tile-title, .card .works-tile .tile-info .tile-title, .works-tile .tile-info .card .tile-title, .paper .media > .title, .lines-list .media > .title, .card .media > .title, .paper .media > i, .lines-list .media > i, .card .media > i, .toolbar-action {
   font-size: 1.71rem;
   line-height: 1.33; }
 
-.title, i, #dialog-box #dialog .title, .tile .tile-info .tile-title, .works-tile .tile-info .tile-title, #bottom-sheet .bs-media .bs-title {
+.title, i, #dialog-box #dialog .title, .tile .tile-info .tile-title, .works-tile .tile-info .tile-title {
   font-size: 1.43rem;
   font-weight: 500; }
 
-.subhead, .paper .content, .lines-list .content, #dialog-box #dialog .content, .card .content, .lines-list li .title, .lines-list li i, .lines-list li #dialog-box #dialog .title, #dialog-box #dialog .lines-list li .title, .lines-list li .tile .tile-info .tile-title, .tile .tile-info .lines-list li .tile-title, .lines-list li .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list li .tile-title, .lines-list li #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media .lines-list li .bs-title, .tile .tile-info .tile-subhead, .works-tile .tile-info .tile-subhead {
+.subhead, .paper .content, .lines-list .content, #dialog-box #dialog .content, .card .content, .lines-list li .title, .lines-list li i, .lines-list li #dialog-box #dialog .title, #dialog-box #dialog .lines-list li .title, .lines-list li .tile .tile-info .tile-title, .tile .tile-info .lines-list li .tile-title, .lines-list li .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list li .tile-title, .tile .tile-info .tile-subhead, .works-tile .tile-info .tile-subhead {
   font-size: 1.14rem;
   line-height: 1.5; }
 
@@ -10389,7 +10390,7 @@ html {
   line-height: 1.72;
   font-weight: 500; }
 
-.b1, .lines-list li .content, .chip .title, .chip i, .chip #dialog-box #dialog .title, #dialog-box #dialog .chip .title, .chip .tile .tile-info .tile-title, .tile .tile-info .chip .tile-title, .chip .works-tile .tile-info .tile-title, .works-tile .tile-info .chip .tile-title, .chip #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media .chip .bs-title {
+.b1, .lines-list li .content, .chip .title, .chip i, .chip #dialog-box #dialog .title, #dialog-box #dialog .chip .title, .chip .tile .tile-info .tile-title, .tile .tile-info .chip .tile-title, .chip .works-tile .tile-info .tile-title, .works-tile .tile-info .chip .tile-title {
   font-size: 1rem;
   line-height: 1.42; }
 
@@ -10411,7 +10412,7 @@ small {
 .light {
   font-weight: 300; }
 
-#content-area, #bottom-sheet .bs-content {
+#content-area {
   margin: 0 auto;
   width: 100%;
   padding: 4px; }
@@ -10644,7 +10645,7 @@ small {
   padding: 16px;
   margin: 0;
   overflow: hidden; }
-  .paper .title, .lines-list .title, .card .title, .paper i, .lines-list i, #dialog-box #dialog i, .card i, #dialog-box #dialog .title, .paper .tile .tile-info .tile-title, .tile .tile-info .paper .tile-title, .lines-list .tile .tile-info .tile-title, .tile .tile-info .lines-list .tile-title, #dialog-box #dialog .tile .tile-info .tile-title, .tile .tile-info #dialog-box #dialog .tile-title, .card .tile .tile-info .tile-title, .tile .tile-info .card .tile-title, .paper .works-tile .tile-info .tile-title, .works-tile .tile-info .paper .tile-title, .lines-list .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list .tile-title, #dialog-box #dialog .works-tile .tile-info .tile-title, .works-tile .tile-info #dialog-box #dialog .tile-title, .card .works-tile .tile-info .tile-title, .works-tile .tile-info .card .tile-title, .paper #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media .paper .bs-title, .lines-list #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media .lines-list .bs-title, #dialog-box #dialog #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media #dialog-box #dialog .bs-title, .card #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media .card .bs-title {
+  .paper .title, .lines-list .title, .card .title, .paper i, .lines-list i, #dialog-box #dialog i, .card i, #dialog-box #dialog .title, .paper .tile .tile-info .tile-title, .tile .tile-info .paper .tile-title, .lines-list .tile .tile-info .tile-title, .tile .tile-info .lines-list .tile-title, #dialog-box #dialog .tile .tile-info .tile-title, .tile .tile-info #dialog-box #dialog .tile-title, .card .tile .tile-info .tile-title, .tile .tile-info .card .tile-title, .paper .works-tile .tile-info .tile-title, .works-tile .tile-info .paper .tile-title, .lines-list .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list .tile-title, #dialog-box #dialog .works-tile .tile-info .tile-title, .works-tile .tile-info #dialog-box #dialog .tile-title, .card .works-tile .tile-info .tile-title, .works-tile .tile-info .card .tile-title {
     display: block;
     margin-bottom: 12px; }
   .paper .content, .lines-list .content, #dialog-box #dialog .content, .card .content {
@@ -10653,24 +10654,25 @@ small {
     position: relative;
     margin: -16px; }
     .paper .media > img, .lines-list .media > img, #dialog-box #dialog .media > img, .card .media > img {
-      position: relative; }
-    .paper .media > .title, .lines-list .media > .title, .card .media > .title, .paper .media > i, .lines-list .media > i, #dialog-box #dialog .media > i, .card .media > i, #dialog-box #dialog .media > .title, .paper .tile .tile-info .media > .tile-title, .tile .tile-info .paper .media > .tile-title, .lines-list .tile .tile-info .media > .tile-title, .tile .tile-info .lines-list .media > .tile-title, #dialog-box #dialog .tile .tile-info .media > .tile-title, .tile .tile-info #dialog-box #dialog .media > .tile-title, .card .tile .tile-info .media > .tile-title, .tile .tile-info .card .media > .tile-title, .paper .works-tile .tile-info .media > .tile-title, .works-tile .tile-info .paper .media > .tile-title, .lines-list .works-tile .tile-info .media > .tile-title, .works-tile .tile-info .lines-list .media > .tile-title, #dialog-box #dialog .works-tile .tile-info .media > .tile-title, .works-tile .tile-info #dialog-box #dialog .media > .tile-title, .card .works-tile .tile-info .media > .tile-title, .works-tile .tile-info .card .media > .tile-title, .paper #bottom-sheet .bs-media .media > .bs-title, #bottom-sheet .bs-media .paper .media > .bs-title, .lines-list #bottom-sheet .bs-media .media > .bs-title, #bottom-sheet .bs-media .lines-list .media > .bs-title, #dialog-box #dialog #bottom-sheet .bs-media .media > .bs-title, #bottom-sheet .bs-media #dialog-box #dialog .media > .bs-title, .card #bottom-sheet .bs-media .media > .bs-title, #bottom-sheet .bs-media .card .media > .bs-title {
+      position: relative;
+      width: 100%; }
+    .paper .media > .title, .lines-list .media > .title, .card .media > .title, .paper .media > i, .lines-list .media > i, #dialog-box #dialog .media > i, .card .media > i, #dialog-box #dialog .media > .title, .paper .tile .tile-info .media > .tile-title, .tile .tile-info .paper .media > .tile-title, .lines-list .tile .tile-info .media > .tile-title, .tile .tile-info .lines-list .media > .tile-title, #dialog-box #dialog .tile .tile-info .media > .tile-title, .tile .tile-info #dialog-box #dialog .media > .tile-title, .card .tile .tile-info .media > .tile-title, .tile .tile-info .card .media > .tile-title, .paper .works-tile .tile-info .media > .tile-title, .works-tile .tile-info .paper .media > .tile-title, .lines-list .works-tile .tile-info .media > .tile-title, .works-tile .tile-info .lines-list .media > .tile-title, #dialog-box #dialog .works-tile .tile-info .media > .tile-title, .works-tile .tile-info #dialog-box #dialog .media > .tile-title, .card .works-tile .tile-info .media > .tile-title, .works-tile .tile-info .card .media > .tile-title {
       position: absolute;
       color: #fff;
       bottom: 0;
       left: 0;
       margin: 0;
       padding: 16px; }
-  .paper .scrim, .lines-list .scrim, #dialog-box #dialog .scrim, .card .scrim, .paper #bottom-sheet .bs-media .bs-scrim, #bottom-sheet .bs-media .paper .bs-scrim, .lines-list #bottom-sheet .bs-media .bs-scrim, #bottom-sheet .bs-media .lines-list .bs-scrim, #dialog-box #dialog #bottom-sheet .bs-media .bs-scrim, #bottom-sheet .bs-media #dialog-box #dialog .bs-scrim, .card #bottom-sheet .bs-media .bs-scrim, #bottom-sheet .bs-media .card .bs-scrim {
+  .paper .scrim, .lines-list .scrim, #dialog-box #dialog .scrim, .card .scrim {
     position: absolute;
     left: 0;
     width: 100%;
     height: 56px; }
-    .paper .scrim.top, .lines-list .scrim.top, #dialog-box #dialog .scrim.top, .card .scrim.top, .paper #bottom-sheet .bs-media .top.bs-scrim, #bottom-sheet .bs-media .paper .top.bs-scrim, .lines-list #bottom-sheet .bs-media .top.bs-scrim, #bottom-sheet .bs-media .lines-list .top.bs-scrim, #dialog-box #dialog #bottom-sheet .bs-media .top.bs-scrim, #bottom-sheet .bs-media #dialog-box #dialog .top.bs-scrim, .card #bottom-sheet .bs-media .top.bs-scrim, #bottom-sheet .bs-media .card .top.bs-scrim {
+    .paper .scrim.top, .lines-list .scrim.top, #dialog-box #dialog .scrim.top, .card .scrim.top {
       top: 0;
       background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 100%); }
-    .paper .scrim.bottom, .lines-list .scrim.bottom, #dialog-box #dialog .scrim.bottom, .card .scrim.bottom, .paper #bottom-sheet .bs-media .bottom.bs-scrim, #bottom-sheet .bs-media .paper .bottom.bs-scrim, .lines-list #bottom-sheet .bs-media .bottom.bs-scrim, #bottom-sheet .bs-media .lines-list .bottom.bs-scrim, #dialog-box #dialog #bottom-sheet .bs-media .bottom.bs-scrim, #bottom-sheet .bs-media #dialog-box #dialog .bottom.bs-scrim, .card #bottom-sheet .bs-media .bottom.bs-scrim, #bottom-sheet .bs-media .card .bottom.bs-scrim {
+    .paper .scrim.bottom, .lines-list .scrim.bottom, #dialog-box #dialog .scrim.bottom, .card .scrim.bottom {
       bottom: 0;
       background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
       background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 100%); }
@@ -10688,7 +10690,7 @@ small {
   .paper.activated, .activated.lines-list, #dialog-box .activated#dialog, .activated.card, .paper .activated, .lines-list .activated, #dialog-box #dialog .activated, .card .activated {
     background-color: #009688;
     color: white; }
-    .paper.activated .secondary, .activated.lines-list .secondary, #dialog-box .activated#dialog .secondary, .activated.card .secondary, .paper.activated .content, .activated.lines-list .content, .paper.activated #dialog-box #dialog .content, #dialog-box #dialog .paper.activated .content, .activated.lines-list #dialog-box #dialog .content, #dialog-box #dialog .activated.lines-list .content, #dialog-box .activated#dialog .content, .activated.card #dialog-box #dialog .content, #dialog-box #dialog .activated.card .content, .activated.card .content, .paper.activated .chip .title, .chip .paper.activated .title, .activated.lines-list .chip .title, .chip .activated.lines-list .title, .activated.card .chip .title, .chip .activated.card .title, .paper.activated .chip i, .chip .paper.activated i, .activated.lines-list .chip i, .chip .activated.lines-list i, #dialog-box .activated#dialog .chip i, .chip #dialog-box .activated#dialog i, .activated.card .chip i, .chip .activated.card i, .paper.activated .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .paper.activated .title, .activated.lines-list .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated.lines-list .title, .chip #dialog-box .activated#dialog .title, .activated.card .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated.card .title, .paper.activated #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .paper.activated .title, .activated.lines-list #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .activated.lines-list .title, #dialog-box .activated#dialog .chip .title, .activated.card #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .activated.card .title, .paper.activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .paper.activated .tile-title, .activated.lines-list .chip .tile .tile-info .tile-title, .chip .tile .tile-info .activated.lines-list .tile-title, #dialog-box .activated#dialog .chip .tile .tile-info .tile-title, .chip .tile .tile-info #dialog-box .activated#dialog .tile-title, .activated.card .chip .tile .tile-info .tile-title, .chip .tile .tile-info .activated.card .tile-title, .paper.activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .paper.activated .tile-title, .activated.lines-list .tile .tile-info .chip .tile-title, .tile .tile-info .chip .activated.lines-list .tile-title, #dialog-box .activated#dialog .tile .tile-info .chip .tile-title, .tile .tile-info .chip #dialog-box .activated#dialog .tile-title, .activated.card .tile .tile-info .chip .tile-title, .tile .tile-info .chip .activated.card .tile-title, .paper.activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .paper.activated .tile-title, .activated.lines-list .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .activated.lines-list .tile-title, #dialog-box .activated#dialog .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info #dialog-box .activated#dialog .tile-title, .activated.card .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .activated.card .tile-title, .paper.activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .paper.activated .tile-title, .activated.lines-list .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .activated.lines-list .tile-title, #dialog-box .activated#dialog .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip #dialog-box .activated#dialog .tile-title, .activated.card .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .activated.card .tile-title, .paper.activated .chip #bottom-sheet .bs-media .bs-title, .chip #bottom-sheet .bs-media .paper.activated .bs-title, .activated.lines-list .chip #bottom-sheet .bs-media .bs-title, .chip #bottom-sheet .bs-media .activated.lines-list .bs-title, #dialog-box .activated#dialog .chip #bottom-sheet .bs-media .bs-title, .chip #bottom-sheet .bs-media #dialog-box .activated#dialog .bs-title, .activated.card .chip #bottom-sheet .bs-media .bs-title, .chip #bottom-sheet .bs-media .activated.card .bs-title, .paper.activated #bottom-sheet .bs-media .chip .bs-title, #bottom-sheet .bs-media .chip .paper.activated .bs-title, .activated.lines-list #bottom-sheet .bs-media .chip .bs-title, #bottom-sheet .bs-media .chip .activated.lines-list .bs-title, #dialog-box .activated#dialog #bottom-sheet .bs-media .chip .bs-title, #bottom-sheet .bs-media .chip #dialog-box .activated#dialog .bs-title, .activated.card #bottom-sheet .bs-media .chip .bs-title, #bottom-sheet .bs-media .chip .activated.card .bs-title, .paper .activated .secondary, .lines-list .activated .secondary, #dialog-box #dialog .activated .secondary, .card .activated .secondary, .paper .activated .content, .lines-list .activated .content, .paper .activated #dialog-box #dialog .content, .lines-list .activated #dialog-box #dialog .content, #dialog-box #dialog .activated .content, .card .activated #dialog-box #dialog .content, .card .activated .content, .paper .activated .chip .title, .chip .paper .activated .title, .lines-list .activated .chip .title, .chip .lines-list .activated .title, .card .activated .chip .title, .chip .card .activated .title, .paper .activated .chip i, .chip .paper .activated i, .lines-list .activated .chip i, .chip .lines-list .activated i, #dialog-box #dialog .activated .chip i, .chip #dialog-box #dialog .activated i, .card .activated .chip i, .chip .card .activated i, .paper .activated .chip #dialog-box #dialog .title, .lines-list .activated .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated .title, .card .activated .chip #dialog-box #dialog .title, .paper .activated #dialog-box #dialog .chip .title, .lines-list .activated #dialog-box #dialog .chip .title, #dialog-box #dialog .activated .chip .title, #dialog-box #dialog .chip .activated .title, .card .activated #dialog-box #dialog .chip .title, .paper .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .paper .activated .tile-title, .lines-list .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .lines-list .activated .tile-title, #dialog-box #dialog .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info #dialog-box #dialog .activated .tile-title, .card .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .card .activated .tile-title, .paper .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .paper .activated .tile-title, .lines-list .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .lines-list .activated .tile-title, #dialog-box #dialog .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip #dialog-box #dialog .activated .tile-title, .card .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .card .activated .tile-title, .paper .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .paper .activated .tile-title, .lines-list .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .lines-list .activated .tile-title, #dialog-box #dialog .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info #dialog-box #dialog .activated .tile-title, .card .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .card .activated .tile-title, .paper .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .paper .activated .tile-title, .lines-list .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .lines-list .activated .tile-title, #dialog-box #dialog .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip #dialog-box #dialog .activated .tile-title, .card .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .card .activated .tile-title, .paper .activated .chip #bottom-sheet .bs-media .bs-title, .chip #bottom-sheet .bs-media .paper .activated .bs-title, .lines-list .activated .chip #bottom-sheet .bs-media .bs-title, .chip #bottom-sheet .bs-media .lines-list .activated .bs-title, #dialog-box #dialog .activated .chip #bottom-sheet .bs-media .bs-title, .chip #bottom-sheet .bs-media #dialog-box #dialog .activated .bs-title, .card .activated .chip #bottom-sheet .bs-media .bs-title, .chip #bottom-sheet .bs-media .card .activated .bs-title, .paper .activated #bottom-sheet .bs-media .chip .bs-title, #bottom-sheet .bs-media .chip .paper .activated .bs-title, .lines-list .activated #bottom-sheet .bs-media .chip .bs-title, #bottom-sheet .bs-media .chip .lines-list .activated .bs-title, #dialog-box #dialog .activated #bottom-sheet .bs-media .chip .bs-title, #bottom-sheet .bs-media .chip #dialog-box #dialog .activated .bs-title, .card .activated #bottom-sheet .bs-media .chip .bs-title, #bottom-sheet .bs-media .chip .card .activated .bs-title {
+    .paper.activated .secondary, .activated.lines-list .secondary, #dialog-box .activated#dialog .secondary, .activated.card .secondary, .paper.activated .content, .activated.lines-list .content, .paper.activated #dialog-box #dialog .content, #dialog-box #dialog .paper.activated .content, .activated.lines-list #dialog-box #dialog .content, #dialog-box #dialog .activated.lines-list .content, #dialog-box .activated#dialog .content, .activated.card #dialog-box #dialog .content, #dialog-box #dialog .activated.card .content, .activated.card .content, .paper.activated .chip .title, .chip .paper.activated .title, .activated.lines-list .chip .title, .chip .activated.lines-list .title, .activated.card .chip .title, .chip .activated.card .title, .paper.activated .chip i, .chip .paper.activated i, .activated.lines-list .chip i, .chip .activated.lines-list i, #dialog-box .activated#dialog .chip i, .chip #dialog-box .activated#dialog i, .activated.card .chip i, .chip .activated.card i, .paper.activated .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .paper.activated .title, .activated.lines-list .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated.lines-list .title, .chip #dialog-box .activated#dialog .title, .activated.card .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated.card .title, .paper.activated #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .paper.activated .title, .activated.lines-list #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .activated.lines-list .title, #dialog-box .activated#dialog .chip .title, .activated.card #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .activated.card .title, .paper.activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .paper.activated .tile-title, .activated.lines-list .chip .tile .tile-info .tile-title, .chip .tile .tile-info .activated.lines-list .tile-title, #dialog-box .activated#dialog .chip .tile .tile-info .tile-title, .chip .tile .tile-info #dialog-box .activated#dialog .tile-title, .activated.card .chip .tile .tile-info .tile-title, .chip .tile .tile-info .activated.card .tile-title, .paper.activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .paper.activated .tile-title, .activated.lines-list .tile .tile-info .chip .tile-title, .tile .tile-info .chip .activated.lines-list .tile-title, #dialog-box .activated#dialog .tile .tile-info .chip .tile-title, .tile .tile-info .chip #dialog-box .activated#dialog .tile-title, .activated.card .tile .tile-info .chip .tile-title, .tile .tile-info .chip .activated.card .tile-title, .paper.activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .paper.activated .tile-title, .activated.lines-list .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .activated.lines-list .tile-title, #dialog-box .activated#dialog .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info #dialog-box .activated#dialog .tile-title, .activated.card .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .activated.card .tile-title, .paper.activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .paper.activated .tile-title, .activated.lines-list .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .activated.lines-list .tile-title, #dialog-box .activated#dialog .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip #dialog-box .activated#dialog .tile-title, .activated.card .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .activated.card .tile-title, .paper .activated .secondary, .lines-list .activated .secondary, #dialog-box #dialog .activated .secondary, .card .activated .secondary, .paper .activated .content, .lines-list .activated .content, .paper .activated #dialog-box #dialog .content, .lines-list .activated #dialog-box #dialog .content, #dialog-box #dialog .activated .content, .card .activated #dialog-box #dialog .content, .card .activated .content, .paper .activated .chip .title, .chip .paper .activated .title, .lines-list .activated .chip .title, .chip .lines-list .activated .title, .card .activated .chip .title, .chip .card .activated .title, .paper .activated .chip i, .chip .paper .activated i, .lines-list .activated .chip i, .chip .lines-list .activated i, #dialog-box #dialog .activated .chip i, .chip #dialog-box #dialog .activated i, .card .activated .chip i, .chip .card .activated i, .paper .activated .chip #dialog-box #dialog .title, .lines-list .activated .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated .title, .card .activated .chip #dialog-box #dialog .title, .paper .activated #dialog-box #dialog .chip .title, .lines-list .activated #dialog-box #dialog .chip .title, #dialog-box #dialog .activated .chip .title, #dialog-box #dialog .chip .activated .title, .card .activated #dialog-box #dialog .chip .title, .paper .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .paper .activated .tile-title, .lines-list .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .lines-list .activated .tile-title, #dialog-box #dialog .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info #dialog-box #dialog .activated .tile-title, .card .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .card .activated .tile-title, .paper .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .paper .activated .tile-title, .lines-list .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .lines-list .activated .tile-title, #dialog-box #dialog .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip #dialog-box #dialog .activated .tile-title, .card .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .card .activated .tile-title, .paper .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .paper .activated .tile-title, .lines-list .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .lines-list .activated .tile-title, #dialog-box #dialog .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info #dialog-box #dialog .activated .tile-title, .card .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .card .activated .tile-title, .paper .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .paper .activated .tile-title, .lines-list .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .lines-list .activated .tile-title, #dialog-box #dialog .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip #dialog-box #dialog .activated .tile-title, .card .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .card .activated .tile-title {
       color: rgba(255, 255, 255, 0.7); }
     .paper.activated .content, .activated.lines-list .content, #dialog-box .activated#dialog .content, .activated.card .content, .paper .activated .content, .lines-list .activated .content, #dialog-box #dialog .activated .content, .card .activated .content {
       color: rgba(255, 255, 255, 0.7); }
@@ -10707,7 +10709,7 @@ small {
       vertical-align: middle; }
     .lines-list li .supporting-text {
       padding: 0 16px; }
-    .lines-list li .title, .lines-list li i, .lines-list li #dialog-box #dialog .title, #dialog-box #dialog .lines-list li .title, .lines-list li .tile .tile-info .tile-title, .tile .tile-info .lines-list li .tile-title, .lines-list li .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list li .tile-title, .lines-list li #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media .lines-list li .bs-title {
+    .lines-list li .title, .lines-list li i, .lines-list li #dialog-box #dialog .title, #dialog-box #dialog .lines-list li .title, .lines-list li .tile .tile-info .tile-title, .tile .tile-info .lines-list li .tile-title, .lines-list li .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list li .tile-title {
       font-weight: normal;
       margin: 0;
       max-width: 200px;
@@ -10822,7 +10824,7 @@ small {
     height: auto;
     border-radius: 50%;
     overflow: hidden; }
-  .chip .title, .chip i, .chip #dialog-box #dialog .title, #dialog-box #dialog .chip .title, .chip .tile .tile-info .tile-title, .tile .tile-info .chip .tile-title, .chip .works-tile .tile-info .tile-title, .works-tile .tile-info .chip .tile-title, .chip #bottom-sheet .bs-media .bs-title, #bottom-sheet .bs-media .chip .bs-title {
+  .chip .title, .chip i, .chip #dialog-box #dialog .title, #dialog-box #dialog .chip .title, .chip .tile .tile-info .tile-title, .tile .tile-info .chip .tile-title, .chip .works-tile .tile-info .tile-title, .works-tile .tile-info .chip .tile-title {
     display: inline-block;
     vertical-align: middle;
     padding: 0 12px 0 8px;
@@ -10858,36 +10860,24 @@ small {
     width: 100%;
     height: 100%;
     overflow: auto; }
-  #bottom-sheet .bs-media {
+  #bottom-sheet .media {
     position: fixed;
     top: 0;
     overflow: hidden;
     min-height: 56px;
     background-color: darkorange;
     pointer-events: none; }
-    #bottom-sheet .bs-media img {
+    #bottom-sheet .media img {
       position: absolute;
       margin: auto;
       top: 0;
       bottom: 0; }
-    #bottom-sheet .bs-media .bs-scrim {
-      position: absolute; }
-    #bottom-sheet .bs-media .bs-title {
+    #bottom-sheet .media .title, #bottom-sheet .media i, #bottom-sheet .media #dialog-box #dialog .title, #dialog-box #dialog #bottom-sheet .media .title, #bottom-sheet .media .tile .tile-info .tile-title, .tile .tile-info #bottom-sheet .media .tile-title, #bottom-sheet .media .works-tile .tile-info .tile-title, .works-tile .tile-info #bottom-sheet .media .tile-title {
       position: absolute;
       bottom: 0;
       left: 0;
-      padding: 16px;
-      color: #fafafa; }
-    #bottom-sheet .bs-media .bs-actions {
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 16px;
-      color: #fafafa;
-      pointer-events: all; }
-      #bottom-sheet .bs-media .bs-actions .action {
-        margin-left: 16px; }
-  #bottom-sheet .bs-content {
+      padding: 16px; }
+  #bottom-sheet .supporting-text {
     margin-top: 360px;
     background-color: #fafafa; }
   #bottom-sheet.active {
@@ -11142,7 +11132,7 @@ small {
     height: 64px;
     line-height: 64px; } }
 
-.toolbar-action, #bottom-sheet .bs-media .bs-actions .action {
+.toolbar-action {
   line-height: 24px;
   color: #fff; }
 
@@ -11215,19 +11205,19 @@ button {
   border: solid 2px rgba(0, 0, 0, 0.56);
   border-radius: 2px;
   background-size: 0%;
-  background: url("img/icons/action/ic_done_24px_white.svg") center no-repeat;
+  background: url("img/icons/action/ic_done_18px.svg") center no-repeat;
   background-size: 0%;
-  -webkit-transition: background-color .08s ease-out, background-size .08s .08s ease-out, border .08s .02s ease-out;
-          transition: background-color .08s ease-out, background-size .08s .08s ease-out, border .08s .02s ease-out;
+  -webkit-transition: background-color 140ms, background-size 280ms, border-color 140ms;
+          transition: background-color 140ms, background-size 280ms, border-color 140ms;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none; }
+          user-select: none;
+  cursor: pointer; }
   .checkbox.checked {
-    border: solid 0px rgba(0, 0, 0, 0.12);
+    border-color: #009688;
     background-color: #009688;
-    background-size: 100%;
-    border: none; }
+    background-size: 100%; }
 
 .switch {
   position: relative;
@@ -11236,7 +11226,8 @@ button {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none; }
+          user-select: none;
+  cursor: pointer; }
   .switch .switch-bar {
     position: absolute;
     height: 100%;
@@ -11245,6 +11236,10 @@ button {
     pointer-events: none;
     opacity: 0.26;
     background-color: #000000;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     -webkit-transition: background-color linear .08s;
             transition: background-color linear .08s; }
   .switch .switch-button {
@@ -11255,6 +11250,10 @@ button {
     border-radius: 50%;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
     background-color: #f1f1f1;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     -webkit-transition: -webkit-transform linear .08s, background-color linear .08s;
             transition: transform linear .08s, background-color linear .08s; }
   .switch.on .switch-bar {
@@ -11281,50 +11280,73 @@ button {
     position: absolute;
     height: 100%;
     width: 100%;
+    left: 6px;
     pointer-events: none;
     opacity: 0.26;
-    background-color: #000000; }
+    background-color: #000000;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
   .slider .slider-button {
     position: absolute;
     top: -5px;
-    left: 0;
+    left: calc(50 + 0%);
     height: 12px;
     width: 12px;
     border-radius: 50%;
     background-color: #009688;
-    -webkit-transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out, border-radius 0.08s ease-out, -webkit-transform 0s 0.8s linear;
-            transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out, border-radius 0.08s ease-out, transform 0s 0.8s linear; }
-    .slider .slider-button:after {
-      content: '';
-      height: 12px;
-      width: 12px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center; }
+    .slider .slider-button.expand.pin:before {
+      margin-top: -39px;
+      -webkit-transform: rotate(-45deg) scale(1);
+          -ms-transform: rotate(-45deg) scale(1);
+              transform: rotate(-45deg) scale(1); }
+    .slider .slider-button.expand.pin:after {
+      margin-top: -39px;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
+    .slider .slider-button.pin:before {
+      content: "";
       position: absolute;
-      background-color: red;
-      border-radius: 50%;
-      -webkit-transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out, border-radius 0s ease-out, -webkit-transform 0s 0.8s linear;
-              transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out, border-radius 0s ease-out, transform 0s 0.8s linear; }
-    .slider .slider-button.pin {
-      top: -38px;
-      left: -4px;
+      margin-left: -7px;
+      margin-top: 0;
       height: 26px;
       width: 26px;
-      -webkit-transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out, border-radius 0.08s ease-out, -webkit-transform 0s linear;
-              transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out, border-radius 0.08s ease-out, transform 0s linear; }
-      .slider .slider-button.pin:after {
-        content: '';
-        height: 26px;
-        width: 26px;
-        position: absolute;
-        background-color: red;
-        border-radius: 0;
-        border-bottom-right-radius: 50%;
-        border-bottom-left-radius: 50%;
-        border-top-left-radius: 50%;
-        -webkit-transform: rotate(135deg);
-            -ms-transform: rotate(135deg);
-                transform: rotate(135deg);
-        -webkit-transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out, border-radius 0.08s ease-out, -webkit-transform 0s linear;
-                transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out, border-radius 0.08s ease-out, transform 0s linear; }
+      background-color: #009688;
+      border-radius: 50% 50% 50% 0;
+      -webkit-transform: rotate(-45deg) scale(0);
+          -ms-transform: rotate(-45deg) scale(0);
+              transform: rotate(-45deg) scale(0);
+      z-index: -1;
+      -webkit-transition: all 140ms;
+              transition: all 140ms; }
+    .slider .slider-button.pin:after {
+      content: attr(value);
+      color: #fff;
+      font-size: 0.86rem;
+      text-align: center;
+      position: absolute;
+      margin-left: -7px;
+      margin-top: 0;
+      height: 26px;
+      width: 26px;
+      line-height: 26px;
+      -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+              transform: scale(0);
+      background-color: transparent;
+      border-radius: 50%;
+      -webkit-transition: all 140ms;
+              transition: all 140ms; }
   .slider.disabled {
     pointer-events: none; }
     .slider.disabled .slider-bar {

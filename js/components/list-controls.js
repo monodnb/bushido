@@ -6,48 +6,60 @@
 		$body = $("body"),
 		$checkbox = $(".checkbox");
 
-		// The $ is now locally scoped
-		$(function () {
+	// The $ is now locally scoped
+	$(function () {
 
-			// DOM ready!
-
-
-			// Initial setup
+		// DOM ready!
 
 
-			// Event delegation
-			$(".checkbox").on("click", doneCheckBox);
-			$(".switch").on("click", turnOnSwitch);
-			$(".slider-button").on("mousedown", expandSliderPin);
+		// Initial setup
 
-		});
+
+		// Event delegation
+		$(".checkbox").on("click", doneCheckBox);
+		$(".switch").on("click", turnOnSwitch);
+		$(".slider-button").on("mousedown", expandSliderPin);
+
+	});
 
 
 	// Functions
 	function doneCheckBox() {
 		$(this).toggleClass("checked");
 	}
+
 	function turnOnSwitch() {
 		$(this).toggleClass("on");
 	}
-	
+
 	function expandSliderPin(startEvent) {
-		$(this).toggleClass("pin");
-		var startPos = startEvent.originalEvent.x,
-			offset = $(this).position().left,
+		$(this).toggleClass("expand draggable");
+		var offset,
+			sliderWidth = $(this).closest(".slider").outerWidth(),
+			perc,
 			translatePos;
-		$window.on("mousemove", function(evt){
-				console.log(evt.originalEvent.x - startPos);
-				translatePos = "translateX(" + (evt.originalEvent.x - startPos + offset) + "px)";
-				$(".pin").css({
+		$window.on("mousemove", function (evt) {
+			//console.log(evt.originalEvent.x);
+			translatePos = "translateX(" + (evt.originalEvent.x -7) + "px)";
+			perc = Math.abs(Math.floor(((sliderWidth - evt.originalEvent.x +7) / sliderWidth) * 100 - 100));
+			offset = $(".draggable").position().left;
+			$(".pin")
+				.removeAttr("style")
+				.css({
 					transform: translatePos,
 					msTransform: translatePos,
 					webkitTransform: translatePos
-				});
-			});
-		$window.one("mouseup", function(){
-			$(".pin").toggleClass("pin");
+				})
+				.attr("value", perc);
+			console.log(perc);
+		});
+		$window.one("mouseup", function () {
+			$(".pin").toggleClass("expand draggable");
+			offset = $(".draggable").position().left;
 			$window.off("mousemove");
+			$(".pin").removeAttr("style").css({
+				left: Math.abs(Math.floor(((sliderWidth - offset) / sliderWidth) * 100 - 100)) + "%"
+			});
 		});
 	}
 

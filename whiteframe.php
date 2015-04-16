@@ -210,7 +210,7 @@ get_header(); ?>
 <div class="row">
 	<div class="slider">
 		<div class="slider-bar"></div>
-		<div class="slider-button pin"></div>
+		<div class="slider-button pin" value="15"></div>
 	</div>
 </div>
 

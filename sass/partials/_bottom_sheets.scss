@@ -27,7 +27,7 @@
 		height: 100%;
 		overflow: auto;
 	}
-	.bs-media{
+	.media{
 		position:fixed;
 		top:0;
 		overflow: hidden;
@@ -40,33 +40,15 @@
 			top: 0;
 			bottom: 0;
 		}
-		.bs-scrim{
-			@extend .scrim;
-			position: absolute;
-		}
-		.bs-title{
-			@extend .title;
+		.title{
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			padding: $content-padding;
-			color: #fafafa;
-		}
-		.bs-actions{
-			position: absolute;
-			top: 0;
-			right: 0;
-			padding: $content-padding;
-			color: #fafafa;
-			pointer-events: all;
-			.action{
-				margin-left: $content-padding;
-				@extend .toolbar-action;
-			}
 		}
 	}
-	.bs-content{
-		@extend #content-area;
+	.supporting-text{
+		//@extend #content-area;
 		margin-top: 360px;
 		background-color: color("grey", "lighten-5");
 	}

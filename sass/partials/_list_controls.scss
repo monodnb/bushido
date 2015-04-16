@@ -6,15 +6,15 @@
 	border: solid 2px rgba(0, 0, 0, 0.56);
 	border-radius: 2px;
 	background-size: 0%;
-	background: url("img/icons/action/ic_done_24px_white.svg") center no-repeat;
+	background: url("img/icons/action/ic_done_18px.svg") center no-repeat;
 	background-size: 0%;
-	transition: background-color .08s ease-out, background-size .08s .08s ease-out, border .08s .02s ease-out;
+	transition: background-color 140ms, background-size 280ms, border-color 140ms;
 	user-select: none;
+	cursor: pointer;
 	&.checked {
-		border: solid 0px rgba(0, 0, 0, 0.12);
+		border-color: $primary-color;
 		background-color: $primary-color;
 		background-size: 100%;
-		border: none;
 	}
 }
 
@@ -23,6 +23,7 @@
 	width: 36px;
 	height: 14px;
 	user-select: none;
+	cursor: pointer;
 	.switch-bar {
 		position: absolute;
 		height: 100%;
@@ -31,6 +32,7 @@
 		pointer-events: none;
 		opacity: 0.26;
 		background-color: #000000;
+		user-select: none;
 		transition: background-color linear .08s;
 	}
 	.switch-button {
@@ -41,6 +43,7 @@
 		border-radius: 50%;
 		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
 		background-color: #f1f1f1;
+		user-select: none;
 		transition: transform linear .08s, background-color linear .08s;
 	}
 	&.on {
@@ -68,48 +71,66 @@
 		position: absolute;
 		height: 100%;
 		width: 100%;
+		left: 6px;
 		pointer-events: none;
 		opacity: 0.26;
 		background-color: #000000;
+		user-select: none;
 	}
 	.slider-button {
 		position: absolute;
 		top: -5px;
-		left: 0;
+		left: calc(50 + 0%);
 		height: 12px;
 		width: 12px;
 		border-radius: 50%;
 		background-color: $primary-color;
-		transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out,border-radius 0.08s ease-out, transform 0s 0.8s linear;
-		&:after{
-				content: '';
-				  height: 12px;
-				  width: 12px;
-				  position: absolute;
-				  background-color: red;
-				  border-radius: 50%;
-				transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out,border-radius 0s ease-out, transform 0s 0.8s linear;
-			}
-		&.pin {
-			top: -38px;
-			left: -4px;
-			height: 26px;
-			width: 26px;
-			transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out, border-radius 0.08s ease-out, transform 0s linear;
-			&:after{
-				content: '';
-				  height: 26px;
-				  width: 26px;
-				  position: absolute;
-				  background-color: red;
-				border-radius:0;
-				  border-bottom-right-radius: 50%;
-				  border-bottom-left-radius: 50%;
-				  border-top-left-radius: 50%;
-				  transform: rotate(135deg);
-				transition: width 0.08s ease-out, height 0.08s ease-out, top 0.08s ease-out, left 0.08s ease-out, border-radius 0.08s ease-out, transform 0s linear;
+		user-select: none;
+		cursor: pointer;
+		transform-origin: center;
+		&.expand {
+			&.pin {
+				&:before {
+					margin-top: -39px;
+					transform: rotate(-45deg) scale(1);
+				}
+				&:after {
+					margin-top: -39px;
+					transform: scale(1);
+				}
 			}
 		}
+		&.pin {
+				&:before {
+					content: "";
+					position: absolute;
+					margin-left: -7px;
+					margin-top: 0;
+					height: 26px;
+					width: 26px;
+					background-color: $primary-color;
+					border-radius: 50% 50% 50% 0;
+					transform: rotate(-45deg) scale(0);
+					z-index: -1;
+					transition: all 140ms;
+				}
+				&:after {
+					content: attr(value);
+					color: #fff;
+					font-size: 0.86rem;
+					text-align: center;
+					position: absolute;
+					margin-left: -7px;
+					margin-top: 0;
+					height: 26px;
+					width: 26px;
+					line-height: 26px;
+					transform: scale(0);
+					background-color: transparent;
+					border-radius: 50%;
+					transition: all 140ms;
+				}
+			}
 	}
 	&.disabled {
 		pointer-events: none;
