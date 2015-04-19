@@ -4,28 +4,38 @@
 	var $document = $(document),
 		$window = $(window),
 		$body = $("body"),
-		$checkbox = $(".checkbox");
+		$checkbox = $(".checkbox"),
+		$radio = $(".radio-button"),
+		$switch = $(".switch"),
+		$slider = $(".slider"),
+		$sliderBtn = $(".slider").find(".slider-button"),
+		$sliderBar = $(".slider").find(".slider-bar");
 
-	// The $ is now locally scoped
-	$(function () {
+		// The $ is now locally scoped
+		$(function () {
 
-		// DOM ready!
-
-
-		// Initial setup
+			// DOM ready!
 
 
-		// Event delegation
-		$(".checkbox").on("click", doneCheckBox);
-		$(".switch").on("click", turnOnSwitch);
-		$(".slider-button").on("mousedown", expandSliderPin);
+			// Initial setup
 
-	});
+
+			// Event delegation
+			$checkbox.on("click", doneCheckBox);
+			$radio.on("click", onRadioButton);
+			$switch.on("click", turnOnSwitch);
+			$sliderBtn.on("mousedown", expandSliderPin);
+
+		});
 
 
 	// Functions
 	function doneCheckBox() {
 		$(this).toggleClass("checked");
+	}
+
+	function onRadioButton() {
+		$(this).toggleClass("on");
 	}
 
 	function turnOnSwitch() {
@@ -40,8 +50,8 @@
 			translatePos;
 		$window.on("mousemove", function (evt) {
 			//console.log(evt.originalEvent.x);
-			translatePos = "translateX(" + (evt.originalEvent.x -7) + "px)";
-			perc = Math.abs(Math.floor(((sliderWidth - evt.originalEvent.x +7) / sliderWidth) * 100 - 100));
+			translatePos = "translateX(" + (evt.originalEvent.x - 7) + "px)";
+			perc = Math.abs(Math.floor(((sliderWidth - evt.originalEvent.x + 7) / sliderWidth) * 100 - 100));
 			offset = $(".draggable").position().left;
 			$(".pin")
 				.removeAttr("style")
@@ -51,7 +61,6 @@
 					webkitTransform: translatePos
 				})
 				.attr("value", perc);
-			console.log(perc);
 		});
 		$window.one("mouseup", function () {
 			$(".pin").toggleClass("expand draggable");

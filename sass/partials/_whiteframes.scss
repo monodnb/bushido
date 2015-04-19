@@ -36,6 +36,40 @@ body.light-theme {
 			}
 		}
 	}
+	.checkbox{
+		border: solid 2px rgba(0, 0, 0, 0.56);
+		&.checked{
+			border-color: $primary-color;
+		}
+	}
+	.radio-button{
+		.outer-border{
+			border: solid 2px rgba(0, 0, 0, 0.56);
+		}
+		&.on{
+			.outer-border{
+				border-color: $primary-color;
+			}
+		}
+	}
+	.switch{
+		.switch-bar{
+			background-color: rgba(0,0,0,0.26);
+		}
+		.switch-button{
+			background-color: #f1f1f1;
+		}
+		&.on{
+			.switch-button{
+				background-color: $primary-color;
+			}
+		}
+	}
+	.slider{
+		.slider-bar{
+			background-color: rgba(0,0,0,0.26);
+		}
+	}
 	.divider {
 		background-color: $divider-color;
 	}
@@ -79,6 +113,40 @@ body.dark-theme {
 			&.focused, &:hover, &:focus{
 				background-color: $primary-color;
 			}
+		}
+	}
+	.checkbox{
+		border: solid 2px rgba(255, 255, 255, 0.7);
+		&.checked{
+			border-color: $primary-color;
+		}
+	}
+	.radio-button{
+		.outer-border{
+			border: solid 2px rgba(255, 255, 255, 0.7);
+		}
+		&.on{
+			.outer-border{
+				border-color: $primary-color;
+			}
+		}
+	}
+	.switch{
+		.switch-bar{
+			background-color: rgba(255,255,255,0.3);
+		}
+		.switch-button{
+			background-color: #bdbdbd;
+		}
+		&.on{
+			.switch-button{
+				background-color: $primary-color;
+			}
+		}
+	}
+	.slider{
+		.slider-bar{
+			background-color: rgba(255,255,255,0.3);
 		}
 	}
 	.divider {

@@ -152,6 +152,20 @@ get_header(); ?>
 		<div class="checkbox checked"></div>
 	</div>
 </div>
+<div class="row">
+	<div class="s2 col">
+		<div class="radio-button">
+			<div class="outer-border"></div>
+			<div class="inner-circle"></div>
+		</div>
+	</div>
+	<div class="s2 col">
+		<div class="radio-button on">
+			<div class="outer-border"></div>
+			<div class="inner-circle"></div>
+		</div>
+	</div>
+</div>
 </br>
 </br>
 </br>
