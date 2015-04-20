@@ -228,4 +228,26 @@ get_header(); ?>
 	</div>
 </div>
 
+	<input type="text" placeholder="With placeholder">
+	<input type="text" placeholder="With placeholder and autofocused">
+	<input type="text" placeholder="With label" label="Label">
+	<input type="text" placeholder="With label" label="Label" value="Default value" autofocus>
+	<input type="text" placeholder="With label" value="Disabled" disabled>
+
+
+
+
+
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
 <?php get_footer(); ?>

@@ -11200,6 +11200,63 @@ button {
   button.flat {
     background-color: transparent; }
 
+/* all */
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.26); }
+
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.26); }
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.26); }
+
+/* ie */
+input:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.26); }
+
+input:not([type=submit]):not([type=file]) {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  outline: none;
+  margin: 0 0 8px 0;
+  padding: 16px 0 8px 0;
+  width: 100%;
+  height: 48px;
+  box-shadow: none;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  font-size: 16px;
+  line-height: 16px; }
+  input:not([type=submit]):not([type=file]):focus {
+    border-bottom: 2px solid #009688; }
+  input:not([type=submit]):not([type=file])[disabled] {
+    border-bottom-style: dotted; }
+
+.labeled-input {
+  position: relative;
+  height: 72px;
+  padding-top: 16px; }
+  .labeled-input .label {
+    position: absolute;
+    font-size: 16px;
+    bottom: 22px;
+    color: rgba(0, 0, 0, 0.26);
+    -webkit-transition: all .3s;
+            transition: all .3s; }
+  .labeled-input.filled .label {
+    font-size: 12px;
+    bottom: 42px;
+    color: rgba(0, 0, 0, 0.26); }
+  .labeled-input.focus .label, .labeled-input.pressed .label {
+    font-size: 12px;
+    bottom: 42px;
+    color: #009688; }
+
 .floating-action-button {
   background-color: #fff;
   bottom: -28px;

@@ -1,0 +1,71 @@
+/* all */
+::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.26);
+}
+
+::-moz-placeholder {
+	color: rgba(0, 0, 0, 0.26);
+}
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.26);
+}
+
+/* ie */
+input:-moz-placeholder {
+	color: rgba(0, 0, 0, 0.26);
+}
+
+input:not([type=submit]):not([type=file]) {
+	position: relative;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+	outline: none;
+	margin: 0 0 8px 0;
+	padding: 16px 0 8px 0;
+	width: 100%;
+	height: 6 * $vertical-sizing;
+	box-shadow: none;
+	box-sizing: border-box;
+	transition: all .3s;
+	font-size: 16px;
+	line-height: 16px;
+	&:focus {
+		border-bottom: 2px solid $primary-color;
+	}
+	&[disabled]{
+		border-bottom-style: dotted;
+	}
+}
+
+.labeled-input {
+	position: relative;
+	height: 9 * $vertical-sizing;
+	padding-top: 16px;
+	input:not([type=submit]):not([type=file]){
+	}
+	.label {
+		position: absolute;
+		font-size: 16px;
+		bottom: 22px;
+		color: rgba(0, 0, 0, 0.26);
+		transition: all .3s;
+	}
+	&.filled {
+		.label {
+			font-size: 12px;
+			bottom: 42px;
+			color: rgba(0, 0, 0, 0.26);
+		}
+	}
+	&.focus, &.pressed {
+		.label {
+			font-size: 12px;
+			bottom: 42px;
+			color: $primary-color;
+		}
+	}
+}
