@@ -71,7 +71,7 @@
 		border-radius: 50%;
 		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
 		user-select: none;
-		transition: transform linear .08s, background-color linear .08s;
+		transition: .08s;
 	}
 	&.on {
 		.switch-bar {
@@ -80,6 +80,7 @@
 		}
 		.switch-button {
 			transform: translate(16px, 0);
+			//left: 16px;
 			background-color: $primary-color;
 		}
 	}

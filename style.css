@@ -1940,8 +1940,11 @@ img, video {
 
 body.light-theme {
   background-color: #eeeeee;
-  color: rgba(0, 0, 0, 0.87); }
-  body.light-theme .secondary, body.light-theme .paper .content, .paper body.light-theme .content, body.light-theme .lines-list .content, .lines-list body.light-theme .content, body.light-theme #dialog-box #dialog .content, #dialog-box #dialog body.light-theme .content, body.light-theme .card .content, .card body.light-theme .content, body.light-theme .chip .title, .chip body.light-theme .title, body.light-theme .chip i, .chip body.light-theme i, body.light-theme .chip #dialog-box #dialog .title, .chip #dialog-box #dialog body.light-theme .title, body.light-theme #dialog-box #dialog .chip .title, #dialog-box #dialog .chip body.light-theme .title, body.light-theme .chip .tile .tile-info .tile-title, .chip .tile .tile-info body.light-theme .tile-title, body.light-theme .tile .tile-info .chip .tile-title, .tile .tile-info .chip body.light-theme .tile-title, body.light-theme .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info body.light-theme .tile-title, body.light-theme .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip body.light-theme .tile-title {
+  color: rgba(0, 0, 0, 0.87);
+  /* all */
+  /* firefox 19+ */
+  /* ie */ }
+  body.light-theme .secondary, body.light-theme .paper .content, .paper body.light-theme .content, body.light-theme .lines-list .content, .lines-list body.light-theme .content, body.light-theme #dialog-box #dialog .content, #dialog-box #dialog body.light-theme .content, body.light-theme .tile .content, .tile body.light-theme .content, body.light-theme .works-tile .content, .works-tile body.light-theme .content, body.light-theme .card .content, .card body.light-theme .content, body.light-theme .chip .title, .chip body.light-theme .title, body.light-theme .chip i, .chip body.light-theme i, body.light-theme .chip #dialog-box #dialog .title, .chip #dialog-box #dialog body.light-theme .title, body.light-theme #dialog-box #dialog .chip .title, #dialog-box #dialog .chip body.light-theme .title {
     color: rgba(0, 0, 0, 0.54); }
   body.light-theme .disabled {
     color: rgba(0, 0, 0, 0.26); }
@@ -1973,13 +1976,37 @@ body.light-theme {
     background-color: rgba(0, 0, 0, 0.26); }
   body.light-theme .divider {
     background-color: rgba(0, 0, 0, 0.12); }
-  body.light-theme .paper, body.light-theme .lines-list, body.light-theme #dialog-box #dialog, #dialog-box body.light-theme #dialog, body.light-theme .card {
+  body.light-theme .paper, body.light-theme .lines-list, body.light-theme #dialog-box #dialog, #dialog-box body.light-theme #dialog, body.light-theme .tile, body.light-theme .works-tile, body.light-theme .card {
     background-color: #fafafa; }
+  body.light-theme ::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
+  body.light-theme ::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
+  body.light-theme :-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
+  body.light-theme input:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.26); }
+  body.light-theme input:not([type=submit]):not([type=file]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+    body.light-theme input:not([type=submit]):not([type=file]):focus {
+      border-bottom: 2px solid #009688; }
+    body.light-theme input:not([type=submit]):not([type=file])[disabled] {
+      border-bottom-style: dotted;
+      color: rgba(0, 0, 0, 0.26); }
+  body.light-theme .labeled-input .label {
+    color: rgba(0, 0, 0, 0.26); }
+  body.light-theme .labeled-input.filled .label {
+    color: rgba(0, 0, 0, 0.26); }
+  body.light-theme .labeled-input.focus .label, body.light-theme .labeled-input.pressed .label {
+    color: #009688; }
 
 body.dark-theme {
   background-color: #303030;
-  color: white; }
-  body.dark-theme .secondary, body.dark-theme .paper .content, .paper body.dark-theme .content, body.dark-theme .lines-list .content, .lines-list body.dark-theme .content, body.dark-theme #dialog-box #dialog .content, #dialog-box #dialog body.dark-theme .content, body.dark-theme .card .content, .card body.dark-theme .content, body.dark-theme .chip .title, .chip body.dark-theme .title, body.dark-theme .chip i, .chip body.dark-theme i, body.dark-theme .chip #dialog-box #dialog .title, .chip #dialog-box #dialog body.dark-theme .title, body.dark-theme #dialog-box #dialog .chip .title, #dialog-box #dialog .chip body.dark-theme .title, body.dark-theme .chip .tile .tile-info .tile-title, .chip .tile .tile-info body.dark-theme .tile-title, body.dark-theme .tile .tile-info .chip .tile-title, .tile .tile-info .chip body.dark-theme .tile-title, body.dark-theme .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info body.dark-theme .tile-title, body.dark-theme .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip body.dark-theme .tile-title {
+  color: white;
+  /* all */
+  /* firefox 19+ */
+  /* ie */ }
+  body.dark-theme .secondary, body.dark-theme .paper .content, .paper body.dark-theme .content, body.dark-theme .lines-list .content, .lines-list body.dark-theme .content, body.dark-theme #dialog-box #dialog .content, #dialog-box #dialog body.dark-theme .content, body.dark-theme .tile .content, .tile body.dark-theme .content, body.dark-theme .works-tile .content, .works-tile body.dark-theme .content, body.dark-theme .card .content, .card body.dark-theme .content, body.dark-theme .chip .title, .chip body.dark-theme .title, body.dark-theme .chip i, .chip body.dark-theme i, body.dark-theme .chip #dialog-box #dialog .title, .chip #dialog-box #dialog body.dark-theme .title, body.dark-theme #dialog-box #dialog .chip .title, #dialog-box #dialog .chip body.dark-theme .title {
     color: rgba(255, 255, 255, 0.7); }
   body.dark-theme .disabled {
     color: rgba(255, 255, 255, 0.3); }
@@ -2011,8 +2038,29 @@ body.dark-theme {
     background-color: rgba(255, 255, 255, 0.3); }
   body.dark-theme .divider {
     background-color: rgba(255, 255, 255, 0.12); }
-  body.dark-theme .paper, body.dark-theme .lines-list, body.dark-theme #dialog-box #dialog, #dialog-box body.dark-theme #dialog, body.dark-theme .card {
+  body.dark-theme .paper, body.dark-theme .lines-list, body.dark-theme #dialog-box #dialog, #dialog-box body.dark-theme #dialog, body.dark-theme .tile, body.dark-theme .works-tile, body.dark-theme .card {
     background-color: #424242; }
+  body.dark-theme ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
+  body.dark-theme ::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
+  body.dark-theme :-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
+  body.dark-theme input:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.3); }
+  body.dark-theme input:not([type=submit]):not([type=file]) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
+    body.dark-theme input:not([type=submit]):not([type=file]):focus {
+      border-bottom: 2px solid #009688; }
+    body.dark-theme input:not([type=submit]):not([type=file])[disabled] {
+      border-bottom-style: dotted;
+      color: rgba(255, 255, 255, 0.3); }
+  body.dark-theme .labeled-input .label {
+    color: rgba(255, 255, 255, 0.3); }
+  body.dark-theme .labeled-input.filled .label {
+    color: rgba(255, 255, 255, 0.3); }
+  body.dark-theme .labeled-input.focus .label, body.dark-theme .labeled-input.pressed .label {
+    color: #009688; }
 
 /*
 .z1-shadow{
@@ -10375,7 +10423,7 @@ i {
   color: #757575;
   color: rgba(0, 0, 0, 0.54); }
 
-.black87, html, .tile .tile-info, .works-tile .tile-info {
+.black87, html {
   color: #212121;
   color: rgba(0, 0, 0, 0.87); }
 
@@ -10405,15 +10453,15 @@ html {
   font-size: 2.43rem;
   line-height: 1.18; }
 
-.headline, .paper .title, .lines-list .title, .card .title, .paper i, .lines-list i, #dialog-box #dialog i, .card i, #dialog-box #dialog .title, .paper .tile .tile-info .tile-title, .tile .tile-info .paper .tile-title, .lines-list .tile .tile-info .tile-title, .tile .tile-info .lines-list .tile-title, #dialog-box #dialog .tile .tile-info .tile-title, .tile .tile-info #dialog-box #dialog .tile-title, .card .tile .tile-info .tile-title, .tile .tile-info .card .tile-title, .paper .works-tile .tile-info .tile-title, .works-tile .tile-info .paper .tile-title, .lines-list .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list .tile-title, #dialog-box #dialog .works-tile .tile-info .tile-title, .works-tile .tile-info #dialog-box #dialog .tile-title, .card .works-tile .tile-info .tile-title, .works-tile .tile-info .card .tile-title, .paper .media > .title, .lines-list .media > .title, .card .media > .title, .paper .media > i, .lines-list .media > i, .card .media > i, .toolbar-action {
+.headline, .paper .title, .lines-list .title, .tile .title, .works-tile .title, .card .title, .paper i, .lines-list i, #dialog-box #dialog i, .tile i, .works-tile i, .card i, #dialog-box #dialog .title, .paper .media > .title, .lines-list .media > .title, .tile .media > .title, .works-tile .media > .title, .card .media > .title, .paper .media > i, .lines-list .media > i, .tile .media > i, .works-tile .media > i, .card .media > i, .toolbar-action {
   font-size: 1.71rem;
   line-height: 1.33; }
 
-.title, i, #dialog-box #dialog .title, .tile .tile-info .tile-title, .works-tile .tile-info .tile-title {
+.title, i, #dialog-box #dialog .title {
   font-size: 1.43rem;
   font-weight: 500; }
 
-.subhead, .paper .content, .lines-list .content, #dialog-box #dialog .content, .card .content, .lines-list li .title, .lines-list li i, .lines-list li #dialog-box #dialog .title, #dialog-box #dialog .lines-list li .title, .lines-list li .tile .tile-info .tile-title, .tile .tile-info .lines-list li .tile-title, .lines-list li .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list li .tile-title, .tile .tile-info .tile-subhead, .works-tile .tile-info .tile-subhead {
+.subhead, .paper .content, .lines-list .content, #dialog-box #dialog .content, .tile .content, .works-tile .content, .card .content, .lines-list li .title, .lines-list li i, .lines-list li #dialog-box #dialog .title, #dialog-box #dialog .lines-list li .title {
   font-size: 1.14rem;
   line-height: 1.5; }
 
@@ -10422,7 +10470,7 @@ html {
   line-height: 1.72;
   font-weight: 500; }
 
-.b1, .lines-list li .content, .chip .title, .chip i, .chip #dialog-box #dialog .title, #dialog-box #dialog .chip .title, .chip .tile .tile-info .tile-title, .tile .tile-info .chip .tile-title, .chip .works-tile .tile-info .tile-title, .works-tile .tile-info .chip .tile-title {
+.b1, .lines-list li .content, .chip .title, .chip i, .chip #dialog-box #dialog .title, #dialog-box #dialog .chip .title {
   font-size: 1rem;
   line-height: 1.42; }
 
@@ -10670,65 +10718,65 @@ small {
   .divider.right-inset {
     margin-left: 72px; }
 
-.paper, .lines-list, #dialog-box #dialog, .card {
+.paper, .lines-list, #dialog-box #dialog, .tile, .works-tile, .card {
   position: relative;
   border-radius: 2px;
   width: 100%;
   padding: 16px;
   margin: 0;
   overflow: hidden; }
-  .paper .title, .lines-list .title, .card .title, .paper i, .lines-list i, #dialog-box #dialog i, .card i, #dialog-box #dialog .title, .paper .tile .tile-info .tile-title, .tile .tile-info .paper .tile-title, .lines-list .tile .tile-info .tile-title, .tile .tile-info .lines-list .tile-title, #dialog-box #dialog .tile .tile-info .tile-title, .tile .tile-info #dialog-box #dialog .tile-title, .card .tile .tile-info .tile-title, .tile .tile-info .card .tile-title, .paper .works-tile .tile-info .tile-title, .works-tile .tile-info .paper .tile-title, .lines-list .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list .tile-title, #dialog-box #dialog .works-tile .tile-info .tile-title, .works-tile .tile-info #dialog-box #dialog .tile-title, .card .works-tile .tile-info .tile-title, .works-tile .tile-info .card .tile-title {
+  .paper .title, .lines-list .title, .tile .title, .works-tile .title, .card .title, .paper i, .lines-list i, #dialog-box #dialog i, .tile i, .works-tile i, .card i, #dialog-box #dialog .title {
     display: block;
     margin-bottom: 12px; }
-  .paper .content, .lines-list .content, #dialog-box #dialog .content, .card .content {
+  .paper .content, .lines-list .content, #dialog-box #dialog .content, .tile .content, .works-tile .content, .card .content {
     display: block; }
-  .paper .media, .lines-list .media, #dialog-box #dialog .media, .card .media {
+  .paper .media, .lines-list .media, #dialog-box #dialog .media, .tile .media, .works-tile .media, .card .media {
     position: relative;
     margin: -16px; }
-    .paper .media > img, .lines-list .media > img, #dialog-box #dialog .media > img, .card .media > img {
+    .paper .media > img, .lines-list .media > img, #dialog-box #dialog .media > img, .tile .media > img, .works-tile .media > img, .card .media > img {
       position: relative;
       width: 100%; }
-    .paper .media > .title, .lines-list .media > .title, .card .media > .title, .paper .media > i, .lines-list .media > i, #dialog-box #dialog .media > i, .card .media > i, #dialog-box #dialog .media > .title, .paper .tile .tile-info .media > .tile-title, .tile .tile-info .paper .media > .tile-title, .lines-list .tile .tile-info .media > .tile-title, .tile .tile-info .lines-list .media > .tile-title, #dialog-box #dialog .tile .tile-info .media > .tile-title, .tile .tile-info #dialog-box #dialog .media > .tile-title, .card .tile .tile-info .media > .tile-title, .tile .tile-info .card .media > .tile-title, .paper .works-tile .tile-info .media > .tile-title, .works-tile .tile-info .paper .media > .tile-title, .lines-list .works-tile .tile-info .media > .tile-title, .works-tile .tile-info .lines-list .media > .tile-title, #dialog-box #dialog .works-tile .tile-info .media > .tile-title, .works-tile .tile-info #dialog-box #dialog .media > .tile-title, .card .works-tile .tile-info .media > .tile-title, .works-tile .tile-info .card .media > .tile-title {
+    .paper .media > .title, .lines-list .media > .title, .tile .media > .title, .works-tile .media > .title, .card .media > .title, .paper .media > i, .lines-list .media > i, #dialog-box #dialog .media > i, .tile .media > i, .works-tile .media > i, .card .media > i, #dialog-box #dialog .media > .title {
       position: absolute;
       color: #fff;
       bottom: 0;
       left: 0;
       margin: 0;
       padding: 16px; }
-  .paper .scrim, .lines-list .scrim, #dialog-box #dialog .scrim, .card .scrim {
+  .paper .scrim, .lines-list .scrim, #dialog-box #dialog .scrim, .tile .scrim, .works-tile .scrim, .card .scrim {
     position: absolute;
     left: 0;
     width: 100%;
     height: 56px; }
-    .paper .scrim.top, .lines-list .scrim.top, #dialog-box #dialog .scrim.top, .card .scrim.top {
+    .paper .scrim.top, .lines-list .scrim.top, #dialog-box #dialog .scrim.top, .tile .scrim.top, .works-tile .scrim.top, .card .scrim.top {
       top: 0;
       background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 100%); }
-    .paper .scrim.bottom, .lines-list .scrim.bottom, #dialog-box #dialog .scrim.bottom, .card .scrim.bottom {
+    .paper .scrim.bottom, .lines-list .scrim.bottom, #dialog-box #dialog .scrim.bottom, .tile .scrim.bottom, .works-tile .scrim.bottom, .card .scrim.bottom {
       bottom: 0;
       background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
       background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 100%); }
-  .paper .avatar, .lines-list .avatar, #dialog-box #dialog .avatar, .card .avatar {
+  .paper .avatar, .lines-list .avatar, #dialog-box #dialog .avatar, .tile .avatar, .works-tile .avatar, .card .avatar {
     position: relative;
     width: 40px;
     height: 40px;
     overflow: hidden;
     border-radius: 50%; }
-  .paper .action, .lines-list .action, #dialog-box #dialog .action, .card .action {
+  .paper .action, .lines-list .action, #dialog-box #dialog .action, .tile .action, .works-tile .action, .card .action {
     position: relative;
     width: 24px;
     height: 24px;
     overflow: hidden; }
-  .paper.activated, .activated.lines-list, #dialog-box .activated#dialog, .activated.card, .paper .activated, .lines-list .activated, #dialog-box #dialog .activated, .card .activated {
+  .paper.activated, .activated.lines-list, #dialog-box .activated#dialog, .activated.tile, .activated.works-tile, .activated.card, .paper .activated, .lines-list .activated, #dialog-box #dialog .activated, .tile .activated, .works-tile .activated, .card .activated {
     background-color: #009688;
     color: white; }
-    .paper.activated .secondary, .activated.lines-list .secondary, #dialog-box .activated#dialog .secondary, .activated.card .secondary, .paper.activated .content, .activated.lines-list .content, .paper.activated #dialog-box #dialog .content, #dialog-box #dialog .paper.activated .content, .activated.lines-list #dialog-box #dialog .content, #dialog-box #dialog .activated.lines-list .content, #dialog-box .activated#dialog .content, .activated.card #dialog-box #dialog .content, #dialog-box #dialog .activated.card .content, .activated.card .content, .paper.activated .chip .title, .chip .paper.activated .title, .activated.lines-list .chip .title, .chip .activated.lines-list .title, .activated.card .chip .title, .chip .activated.card .title, .paper.activated .chip i, .chip .paper.activated i, .activated.lines-list .chip i, .chip .activated.lines-list i, #dialog-box .activated#dialog .chip i, .chip #dialog-box .activated#dialog i, .activated.card .chip i, .chip .activated.card i, .paper.activated .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .paper.activated .title, .activated.lines-list .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated.lines-list .title, .chip #dialog-box .activated#dialog .title, .activated.card .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated.card .title, .paper.activated #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .paper.activated .title, .activated.lines-list #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .activated.lines-list .title, #dialog-box .activated#dialog .chip .title, .activated.card #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .activated.card .title, .paper.activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .paper.activated .tile-title, .activated.lines-list .chip .tile .tile-info .tile-title, .chip .tile .tile-info .activated.lines-list .tile-title, #dialog-box .activated#dialog .chip .tile .tile-info .tile-title, .chip .tile .tile-info #dialog-box .activated#dialog .tile-title, .activated.card .chip .tile .tile-info .tile-title, .chip .tile .tile-info .activated.card .tile-title, .paper.activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .paper.activated .tile-title, .activated.lines-list .tile .tile-info .chip .tile-title, .tile .tile-info .chip .activated.lines-list .tile-title, #dialog-box .activated#dialog .tile .tile-info .chip .tile-title, .tile .tile-info .chip #dialog-box .activated#dialog .tile-title, .activated.card .tile .tile-info .chip .tile-title, .tile .tile-info .chip .activated.card .tile-title, .paper.activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .paper.activated .tile-title, .activated.lines-list .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .activated.lines-list .tile-title, #dialog-box .activated#dialog .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info #dialog-box .activated#dialog .tile-title, .activated.card .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .activated.card .tile-title, .paper.activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .paper.activated .tile-title, .activated.lines-list .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .activated.lines-list .tile-title, #dialog-box .activated#dialog .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip #dialog-box .activated#dialog .tile-title, .activated.card .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .activated.card .tile-title, .paper .activated .secondary, .lines-list .activated .secondary, #dialog-box #dialog .activated .secondary, .card .activated .secondary, .paper .activated .content, .lines-list .activated .content, .paper .activated #dialog-box #dialog .content, .lines-list .activated #dialog-box #dialog .content, #dialog-box #dialog .activated .content, .card .activated #dialog-box #dialog .content, .card .activated .content, .paper .activated .chip .title, .chip .paper .activated .title, .lines-list .activated .chip .title, .chip .lines-list .activated .title, .card .activated .chip .title, .chip .card .activated .title, .paper .activated .chip i, .chip .paper .activated i, .lines-list .activated .chip i, .chip .lines-list .activated i, #dialog-box #dialog .activated .chip i, .chip #dialog-box #dialog .activated i, .card .activated .chip i, .chip .card .activated i, .paper .activated .chip #dialog-box #dialog .title, .lines-list .activated .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated .title, .card .activated .chip #dialog-box #dialog .title, .paper .activated #dialog-box #dialog .chip .title, .lines-list .activated #dialog-box #dialog .chip .title, #dialog-box #dialog .activated .chip .title, #dialog-box #dialog .chip .activated .title, .card .activated #dialog-box #dialog .chip .title, .paper .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .paper .activated .tile-title, .lines-list .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .lines-list .activated .tile-title, #dialog-box #dialog .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info #dialog-box #dialog .activated .tile-title, .card .activated .chip .tile .tile-info .tile-title, .chip .tile .tile-info .card .activated .tile-title, .paper .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .paper .activated .tile-title, .lines-list .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .lines-list .activated .tile-title, #dialog-box #dialog .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip #dialog-box #dialog .activated .tile-title, .card .activated .tile .tile-info .chip .tile-title, .tile .tile-info .chip .card .activated .tile-title, .paper .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .paper .activated .tile-title, .lines-list .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .lines-list .activated .tile-title, #dialog-box #dialog .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info #dialog-box #dialog .activated .tile-title, .card .activated .chip .works-tile .tile-info .tile-title, .chip .works-tile .tile-info .card .activated .tile-title, .paper .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .paper .activated .tile-title, .lines-list .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .lines-list .activated .tile-title, #dialog-box #dialog .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip #dialog-box #dialog .activated .tile-title, .card .activated .works-tile .tile-info .chip .tile-title, .works-tile .tile-info .chip .card .activated .tile-title {
+    .paper.activated .secondary, .activated.lines-list .secondary, #dialog-box .activated#dialog .secondary, .activated.tile .secondary, .activated.works-tile .secondary, .activated.card .secondary, .paper.activated .content, .activated.lines-list .content, .paper.activated #dialog-box #dialog .content, #dialog-box #dialog .paper.activated .content, .activated.lines-list #dialog-box #dialog .content, #dialog-box #dialog .activated.lines-list .content, #dialog-box .activated#dialog .content, .activated.tile #dialog-box #dialog .content, #dialog-box #dialog .activated.tile .content, .activated.works-tile #dialog-box #dialog .content, #dialog-box #dialog .activated.works-tile .content, .activated.card #dialog-box #dialog .content, #dialog-box #dialog .activated.card .content, .activated.tile .content, .activated.works-tile .content, .activated.card .content, .paper.activated .chip .title, .chip .paper.activated .title, .activated.lines-list .chip .title, .chip .activated.lines-list .title, .activated.tile .chip .title, .chip .activated.tile .title, .activated.works-tile .chip .title, .chip .activated.works-tile .title, .activated.card .chip .title, .chip .activated.card .title, .paper.activated .chip i, .chip .paper.activated i, .activated.lines-list .chip i, .chip .activated.lines-list i, #dialog-box .activated#dialog .chip i, .chip #dialog-box .activated#dialog i, .activated.tile .chip i, .chip .activated.tile i, .activated.works-tile .chip i, .chip .activated.works-tile i, .activated.card .chip i, .chip .activated.card i, .paper.activated .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .paper.activated .title, .activated.lines-list .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated.lines-list .title, .chip #dialog-box .activated#dialog .title, .activated.tile .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated.tile .title, .activated.works-tile .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated.works-tile .title, .activated.card .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated.card .title, .paper.activated #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .paper.activated .title, .activated.lines-list #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .activated.lines-list .title, #dialog-box .activated#dialog .chip .title, .activated.tile #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .activated.tile .title, .activated.works-tile #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .activated.works-tile .title, .activated.card #dialog-box #dialog .chip .title, #dialog-box #dialog .chip .activated.card .title, .paper .activated .secondary, .lines-list .activated .secondary, #dialog-box #dialog .activated .secondary, .tile .activated .secondary, .works-tile .activated .secondary, .card .activated .secondary, .paper .activated .content, .lines-list .activated .content, .paper .activated #dialog-box #dialog .content, .lines-list .activated #dialog-box #dialog .content, #dialog-box #dialog .activated .content, .tile .activated #dialog-box #dialog .content, .works-tile .activated #dialog-box #dialog .content, .card .activated #dialog-box #dialog .content, .tile .activated .content, .works-tile .activated .content, .card .activated .content, .paper .activated .chip .title, .chip .paper .activated .title, .lines-list .activated .chip .title, .chip .lines-list .activated .title, .tile .activated .chip .title, .chip .tile .activated .title, .works-tile .activated .chip .title, .chip .works-tile .activated .title, .card .activated .chip .title, .chip .card .activated .title, .paper .activated .chip i, .chip .paper .activated i, .lines-list .activated .chip i, .chip .lines-list .activated i, #dialog-box #dialog .activated .chip i, .chip #dialog-box #dialog .activated i, .tile .activated .chip i, .chip .tile .activated i, .works-tile .activated .chip i, .chip .works-tile .activated i, .card .activated .chip i, .chip .card .activated i, .paper .activated .chip #dialog-box #dialog .title, .lines-list .activated .chip #dialog-box #dialog .title, .chip #dialog-box #dialog .activated .title, .tile .activated .chip #dialog-box #dialog .title, .works-tile .activated .chip #dialog-box #dialog .title, .card .activated .chip #dialog-box #dialog .title, .paper .activated #dialog-box #dialog .chip .title, .lines-list .activated #dialog-box #dialog .chip .title, #dialog-box #dialog .activated .chip .title, #dialog-box #dialog .chip .activated .title, .tile .activated #dialog-box #dialog .chip .title, .works-tile .activated #dialog-box #dialog .chip .title, .card .activated #dialog-box #dialog .chip .title {
       color: rgba(255, 255, 255, 0.7); }
-    .paper.activated .content, .activated.lines-list .content, #dialog-box .activated#dialog .content, .activated.card .content, .paper .activated .content, .lines-list .activated .content, #dialog-box #dialog .activated .content, .card .activated .content {
+    .paper.activated .content, .activated.lines-list .content, #dialog-box .activated#dialog .content, .activated.tile .content, .activated.works-tile .content, .activated.card .content, .paper .activated .content, .lines-list .activated .content, #dialog-box #dialog .activated .content, .tile .activated .content, .works-tile .activated .content, .card .activated .content {
       color: rgba(255, 255, 255, 0.7); }
-    .paper.activated .disabled, .activated.lines-list .disabled, #dialog-box .activated#dialog .disabled, .activated.card .disabled, .paper .activated .disabled, .lines-list .activated .disabled, #dialog-box #dialog .activated .disabled, .card .activated .disabled {
+    .paper.activated .disabled, .activated.lines-list .disabled, #dialog-box .activated#dialog .disabled, .activated.tile .disabled, .activated.works-tile .disabled, .activated.card .disabled, .paper .activated .disabled, .lines-list .activated .disabled, #dialog-box #dialog .activated .disabled, .tile .activated .disabled, .works-tile .activated .disabled, .card .activated .disabled {
       color: rgba(255, 255, 255, 0.3); }
-    .paper.activated .divider, .activated.lines-list .divider, #dialog-box .activated#dialog .divider, .activated.card .divider, .paper .activated .divider, .lines-list .activated .divider, #dialog-box #dialog .activated .divider, .card .activated .divider {
+    .paper.activated .divider, .activated.lines-list .divider, #dialog-box .activated#dialog .divider, .activated.tile .divider, .activated.works-tile .divider, .activated.card .divider, .paper .activated .divider, .lines-list .activated .divider, #dialog-box #dialog .activated .divider, .tile .activated .divider, .works-tile .activated .divider, .card .activated .divider {
       background-color: rgba(255, 255, 255, 0.12); }
 
 .lines-list {
@@ -10741,7 +10789,7 @@ small {
       vertical-align: middle; }
     .lines-list li .supporting-text {
       padding: 0 16px; }
-    .lines-list li .title, .lines-list li i, .lines-list li #dialog-box #dialog .title, #dialog-box #dialog .lines-list li .title, .lines-list li .tile .tile-info .tile-title, .tile .tile-info .lines-list li .tile-title, .lines-list li .works-tile .tile-info .tile-title, .works-tile .tile-info .lines-list li .tile-title {
+    .lines-list li .title, .lines-list li i, .lines-list li #dialog-box #dialog .title, #dialog-box #dialog .lines-list li .title {
       font-weight: normal;
       margin: 0;
       max-width: 200px;
@@ -10803,45 +10851,6 @@ small {
         margin: 6px 4px;
         padding: 0 8px; }
 
-.tile, .works-tile {
-  position: relative; }
-  .tile .tile-info, .works-tile .tile-info {
-    display: block;
-    position: relative;
-    width: 100%;
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin: 0; }
-    .tile .tile-info.colored, .works-tile .tile-info.colored {
-      background-color: #212121; }
-    .tile .tile-info.light, .works-tile .tile-info.light {
-      position: absolute;
-      bottom: 0;
-      background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
-      background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 100%); }
-    .tile .tile-info .tile-title, .works-tile .tile-info .tile-title {
-      display: block;
-      bottom: 0;
-      left: 0;
-      color: #fafafa; }
-    .tile .tile-info .tile-subhead, .works-tile .tile-info .tile-subhead {
-      display: block;
-      bottom: 0;
-      left: 0;
-      color: #fafafa; }
-  .tile .tile-action, .works-tile .tile-action {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-right: 16px;
-    width: 24px;
-    height: 24px; }
-
 .chip {
   display: inline-block;
   height: 32px;
@@ -10856,7 +10865,7 @@ small {
     height: auto;
     border-radius: 50%;
     overflow: hidden; }
-  .chip .title, .chip i, .chip #dialog-box #dialog .title, #dialog-box #dialog .chip .title, .chip .tile .tile-info .tile-title, .tile .tile-info .chip .tile-title, .chip .works-tile .tile-info .tile-title, .works-tile .tile-info .chip .tile-title {
+  .chip .title, .chip i, .chip #dialog-box #dialog .title, #dialog-box #dialog .chip .title {
     display: inline-block;
     vertical-align: middle;
     padding: 0 12px 0 8px;
@@ -10904,7 +10913,7 @@ small {
       margin: auto;
       top: 0;
       bottom: 0; }
-    #bottom-sheet .media .title, #bottom-sheet .media i, #bottom-sheet .media #dialog-box #dialog .title, #dialog-box #dialog #bottom-sheet .media .title, #bottom-sheet .media .tile .tile-info .tile-title, .tile .tile-info #bottom-sheet .media .tile-title, #bottom-sheet .media .works-tile .tile-info .tile-title, .works-tile .tile-info #bottom-sheet .media .tile-title {
+    #bottom-sheet .media .title, #bottom-sheet .media i, #bottom-sheet .media #dialog-box #dialog .title, #dialog-box #dialog #bottom-sheet .media .title {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -11200,27 +11209,11 @@ button {
   button.flat {
     background-color: transparent; }
 
-/* all */
-::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.26); }
-
-::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.26); }
-
-/* firefox 19+ */
-:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.26); }
-
-/* ie */
-input:-moz-placeholder {
-  color: rgba(0, 0, 0, 0.26); }
-
 input:not([type=submit]):not([type=file]) {
   position: relative;
   background-color: transparent;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   outline: none;
   margin: 0 0 8px 0;
   padding: 16px 0 8px 0;
@@ -11228,10 +11221,8 @@ input:not([type=submit]):not([type=file]) {
   height: 48px;
   box-shadow: none;
   box-sizing: border-box;
-  -webkit-transition: all .3s;
-          transition: all .3s;
-  font-size: 16px;
-  line-height: 16px; }
+  -webkit-transition: all .2s ease-out;
+          transition: all .2s ease-out; }
   input:not([type=submit]):not([type=file]):focus {
     border-bottom: 2px solid #009688; }
   input:not([type=submit]):not([type=file])[disabled] {
@@ -11243,19 +11234,44 @@ input:not([type=submit]):not([type=file]) {
   padding-top: 16px; }
   .labeled-input .label {
     position: absolute;
-    font-size: 16px;
-    bottom: 22px;
-    color: rgba(0, 0, 0, 0.26);
+    bottom: 20px;
     -webkit-transition: all .3s;
             transition: all .3s; }
   .labeled-input.filled .label {
     font-size: 12px;
-    bottom: 42px;
-    color: rgba(0, 0, 0, 0.26); }
+    bottom: 42px; }
   .labeled-input.focus .label, .labeled-input.pressed .label {
     font-size: 12px;
     bottom: 42px;
     color: #009688; }
+
+.multi-line-wrapper {
+  position: relative;
+  max-width: 100%;
+  height: 48px;
+  padding: 16px 0; }
+  .multi-line-wrapper textarea {
+    padding: 0;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    overflow-y: hidden; }
+  .multi-line-wrapper .textclone {
+    visibility: hidden;
+    /*display: none;*/
+    word-wrap: break-word; }
+  .multi-line-wrapper .border {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px solid #009688;
+    bottom: 8px; }
 
 .floating-action-button {
   background-color: #fff;
@@ -11370,8 +11386,8 @@ input:not([type=submit]):not([type=file]) {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    -webkit-transition: -webkit-transform linear .08s, background-color linear .08s;
-            transition: transform linear .08s, background-color linear .08s; }
+    -webkit-transition: .08s;
+            transition: .08s; }
   .switch.on .switch-bar {
     background-color: #009688;
     opacity: 0.5; }

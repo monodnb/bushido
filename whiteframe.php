@@ -7,12 +7,11 @@
 
 get_header(); ?>
 
-
 <div id="dialog-box">
 	<div id="dialog">
-	<div class="supporting-text">
-		<span class="title">Permissions</span>
-		<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna wirl aliqua. Up exlaborum incididunt quis nostrud exercitatn.</span>
+		<div class="supporting-text">
+			<span class="title">Dialog Box</span>
+			<span class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna wirl aliqua. Up exlaborum incididunt quis nostrud exercitatn.</span>
 		</div>
 		<div class="actions">
 			<button class="flat">Disagree</button>
@@ -20,47 +19,13 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+
 <div class="row">
 	<div class="paper">
-	<div class="supporting-text">
-		<span class="title">Design Minutes</span>
-		<span class="content">Chambray Carles Terry Gibson balls plaid wolf. Disrupt fashion axe 90's quinoa +1 Neutra. Irony ethnic ennui McSweeney's, semiotics small batch squid direct trade. Readymade salvia Echo Park scenester.</span>
-	</div>
+		<div class="supporting-text">
+			<span class="title">Paper</span>
+			<span class="content">Chambray Carles Terry Gibson balls plaid wolf. Disrupt fashion axe 90's quinoa +1 Neutra. Irony ethnic ennui McSweeney's, semiotics small batch squid direct trade. Readymade salvia Echo Park scenester.</span>
+		</div>
 	</div>
 </div>
 <div class="divider"></div>
@@ -69,39 +34,51 @@ get_header(); ?>
 		<img src="<?php echo get_template_directory_uri() . '/img/tattoos.jpg'?>" alt="">
 		<div class="scrim bottom"></div>
 		<div class="scrim top"></div>
-		<span class="title">Design Minutes</span>
+		<span class="title">Example card</span>
 	</div>
 </div>
-<div class="divider left-inset"></div>
+<div class="divider"></div>
+<div class="tile">
+	<div class="media">
+		<img src="<?php echo get_template_directory_uri() . '/img/tattoos.jpg'?>" alt="">
+		<div class="scrim bottom"></div>
+		<div class="scrim top"></div>
+		<span class="title">Example Tile</span>
+	</div>
+</div>
+<div class="divider"></div>
+<div class="paper">
+<div class="title">Chips</div>
 <div class="chip closed">
 	<div class="media">
 		<img src="<?php echo get_template_directory_uri() . '/img/tattoos.jpg'?>" alt="">
 	</div>
 	<span class="title">Design Minutes</span>
 </div>
-<div class="divider full-bleed"></div>
+<div class="divider right-inset"></div>
 <div class="chip focused">
 	<div class="media">
 		<img src="<?php echo get_template_directory_uri() . '/img/tattoos.jpg'?>" alt="">
 	</div>
 	<span class="title">Design Minutes</span>
 </div>
-<div class="divider full-bleed"></div>
+<div class="divider right-inset"></div>
 <div class="chip pressed">
 	<div class="media">
 		<img src="<?php echo get_template_directory_uri() . '/img/tattoos.jpg'?>" alt="">
 	</div>
 	<span class="title">Design Minutes</span>
 </div>
-<div class="divider full-bleed"></div>
+<div class="divider right-inset"></div>
 <div class="chip activated">
 	<div class="media">
 		<img src="<?php echo get_template_directory_uri() . '/img/tattoos.jpg'?>" alt="">
 	</div>
 	<span class="title">Design Minutes</span>
 </div>
-<div class="divider left-inset"></div>
-<ul class="lines-list">
+</div>
+<div class="divider"></div>
+<ul class="lines-list resting-shadow">
 	<li class="two-line activated">
 		<div class="avatar">
 			<img src="https://lh4.googleusercontent.com/-w7nPWJY6tDs/UpG4K2vL3hI/AAAAAAAAAOk/KHxTcltiIT8/s256-no/e7adcb27-6a29-442a-a89f-7d7090fab55a" alt="">
@@ -143,46 +120,30 @@ get_header(); ?>
 		<div class="action svg-ic_more_vert_24px"></div>
 	</li>
 </ul>
-<div class="divider full-bleed"></div>
+<div class="divider"></div>
+<div class="paper">
+<div class="title">Controls</div>
 <div class="row">
-	<div class="s2 col">
+	<div class="s3 col">
 		<div class="checkbox"></div>
 	</div>
-	<div class="s2 col">
+	<div class="s3 col">
 		<div class="checkbox checked"></div>
 	</div>
-</div>
-<div class="row">
-	<div class="s2 col">
+	<div class="s3 col">
 		<div class="radio-button">
 			<div class="outer-border"></div>
 			<div class="inner-circle"></div>
 		</div>
 	</div>
-	<div class="s2 col">
+	<div class="s3 col">
 		<div class="radio-button on">
 			<div class="outer-border"></div>
 			<div class="inner-circle"></div>
 		</div>
 	</div>
 </div>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-<div class="row">
-	<div class="tile paper flat-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;"></div>
-	<div class="tile paper resting-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;;"></div>
-	<div class="tile paper raised-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;"></div>
-	<div class="tile paper floating-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;;"></div>
-	<div class="tile paper elevated-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;"></div>
-	<div class="tile paper dialog-shadow" style="width:150px; height:150px; display: inline-block; margin-right: 30px; margin-bottom: 30px;"></div>
-</div>
-</br>
-</br>
+<div class="divider full-bleed"></div>
 <div class="row">
 	<div class="s3 col">
 		<div class="switch">
@@ -209,7 +170,7 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-</br>
+<div class="divider full-bleed"></div>
 <div class="row">
 	<div class="slider">
 		<div class="slider-bar"></div>
@@ -217,28 +178,24 @@ get_header(); ?>
 		<div class="slider-pin"></div>
 	</div>
 </div>
-</br>
-</br>
-</br>
-</br>
+<div class="divider full-bleed"></div>
 <div class="row">
 	<div class="slider">
 		<div class="slider-bar"></div>
 		<div class="slider-button pin" value="15"></div>
 	</div>
 </div>
-
+</div>
+<div class="divider"></div>
+<div class="paper">
+	<div class="title">Text Fields</div>
 	<input type="text" placeholder="With placeholder">
 	<input type="text" placeholder="With placeholder and autofocused">
 	<input type="text" placeholder="With label" label="Label">
 	<input type="text" placeholder="With label" label="Label" value="Default value" autofocus>
 	<input type="text" placeholder="With label" value="Disabled" disabled>
-
-
-
-
-
-
+	<textarea placeholder="With label"></textarea>
+</div>
 
 </br>
 </br>

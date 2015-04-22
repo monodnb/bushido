@@ -1,28 +1,8 @@
-/* all */
-::-webkit-input-placeholder {
-	color: rgba(0, 0, 0, 0.26);
-}
-
-::-moz-placeholder {
-	color: rgba(0, 0, 0, 0.26);
-}
-
-/* firefox 19+ */
-:-ms-input-placeholder {
-	color: rgba(0, 0, 0, 0.26);
-}
-
-/* ie */
-input:-moz-placeholder {
-	color: rgba(0, 0, 0, 0.26);
-}
-
 input:not([type=submit]):not([type=file]) {
 	position: relative;
 	background-color: transparent;
 	border: none;
 	border-radius: 0;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 	outline: none;
 	margin: 0 0 8px 0;
 	padding: 16px 0 8px 0;
@@ -30,13 +10,11 @@ input:not([type=submit]):not([type=file]) {
 	height: 6 * $vertical-sizing;
 	box-shadow: none;
 	box-sizing: border-box;
-	transition: all .3s;
-	font-size: 16px;
-	line-height: 16px;
+	transition: all .2s ease-out;
 	&:focus {
 		border-bottom: 2px solid $primary-color;
 	}
-	&[disabled]{
+	&[disabled] {
 		border-bottom-style: dotted;
 	}
 }
@@ -45,20 +23,16 @@ input:not([type=submit]):not([type=file]) {
 	position: relative;
 	height: 9 * $vertical-sizing;
 	padding-top: 16px;
-	input:not([type=submit]):not([type=file]){
-	}
+	input:not([type=submit]):not([type=file]) {}
 	.label {
 		position: absolute;
-		font-size: 16px;
-		bottom: 22px;
-		color: rgba(0, 0, 0, 0.26);
+		bottom: 20px;
 		transition: all .3s;
 	}
 	&.filled {
 		.label {
 			font-size: 12px;
 			bottom: 42px;
-			color: rgba(0, 0, 0, 0.26);
 		}
 	}
 	&.focus, &.pressed {
@@ -67,5 +41,37 @@ input:not([type=submit]):not([type=file]) {
 			bottom: 42px;
 			color: $primary-color;
 		}
+	}
+}
+
+.multi-line-wrapper {
+	position: relative;
+	max-width: 100%;
+	height: 6 * $vertical-sizing;
+	padding: 16px 0;
+	textarea {
+		padding: 0;
+		border: none;
+		outline: none;
+		resize: none;
+		width: 100%;
+		height: 100%;
+		font: inherit;
+		color: inherit;
+		background-color: transparent;
+		overflow-y: hidden;
+	}
+	.textclone {
+		visibility: hidden;
+		/*display: none;*/
+  		word-wrap: break-word;
+	}
+	.border {
+		position: absolute;
+		box-sizing: border-box;
+		width: 100%;
+		height: 2px;
+		border-bottom: 2px solid $primary-color;
+		bottom: 8px;
 	}
 }

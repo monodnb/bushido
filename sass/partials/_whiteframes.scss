@@ -15,66 +15,107 @@ body.light-theme {
 	.disabled {
 		color: $type-color-disabled;
 	}
-	#toolbar{
+	#toolbar {
 		background-color: $toolbar-color;
 	}
-	.chip{
-		&.closed, &.pressed{
+	.chip {
+		&.closed, &.pressed {
 			background-color: $toolbar-color;
 		}
-		&.focused, &:hover, &:focus, &.activated, &:active{
+		&.focused, &:hover, &:focus, &.activated, &:active {
 			background-color: $bg-color;
 		}
 	}
-	.lines-list>li{
-		&.focused, &:hover, &:focus{
+	.lines-list > li {
+		&.focused, &:hover, &:focus {
 			background-color: $toolbar-color;
 		}
-		&.activated{
-			&.focused, &:hover, &:focus{
+		&.activated {
+			&.focused, &:hover, &:focus {
 				background-color: $primary-color;
 			}
 		}
 	}
-	.checkbox{
+	.checkbox {
 		border: solid 2px rgba(0, 0, 0, 0.56);
-		&.checked{
+		&.checked {
 			border-color: $primary-color;
 		}
 	}
-	.radio-button{
-		.outer-border{
+	.radio-button {
+		.outer-border {
 			border: solid 2px rgba(0, 0, 0, 0.56);
 		}
-		&.on{
-			.outer-border{
+		&.on {
+			.outer-border {
 				border-color: $primary-color;
 			}
 		}
 	}
-	.switch{
-		.switch-bar{
-			background-color: rgba(0,0,0,0.26);
+	.switch {
+		.switch-bar {
+			background-color: rgba(0, 0, 0, 0.26);
 		}
-		.switch-button{
+		.switch-button {
 			background-color: #f1f1f1;
 		}
-		&.on{
-			.switch-button{
+		&.on {
+			.switch-button {
 				background-color: $primary-color;
 			}
 		}
 	}
-	.slider{
-		.slider-bar{
-			background-color: rgba(0,0,0,0.26);
+	.slider {
+		.slider-bar {
+			background-color: rgba(0, 0, 0, 0.26);
 		}
 	}
 	.divider {
 		background-color: $divider-color;
 	}
-	.paper{
+	.paper {
 		background-color: $bg-color;
+	}
+	/* all */
+	::-webkit-input-placeholder {
+		color: rgba(0, 0, 0, 0.26);
+	}
+	::-moz-placeholder {
+		color: rgba(0, 0, 0, 0.26);
+	}
+	/* firefox 19+ */
+	:-ms-input-placeholder {
+		color: rgba(0, 0, 0, 0.26);
+	}
+	/* ie */
+	input:-moz-placeholder {
+		color: rgba(0, 0, 0, 0.26);
+	}
+	input:not([type=submit]):not([type=file]) {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+		&:focus {
+			border-bottom: 2px solid $primary-color;
+		}
+		&[disabled] {
+			border-bottom-style: dotted;
+			color: rgba(0, 0, 0, 0.26);
+		}
+	}
+	.labeled-input {
+		input:not([type=submit]):not([type=file]) {}
+		.label {
+			color: rgba(0, 0, 0, 0.26);
+		}
+		&.filled {
+			.label {
+				color: rgba(0, 0, 0, 0.26);
+			}
+		}
+		&.focus, &.pressed {
+			.label {
+				color: $primary-color;
+			}
+		}
 	}
 }
 
@@ -94,65 +135,106 @@ body.dark-theme {
 	.disabled {
 		color: $type-color-disabled;
 	}
-	#toolbar{
+	#toolbar {
 		background-color: $toolbar-color;
 	}
-	.chip{
-		&.closed, &.pressed{
+	.chip {
+		&.closed, &.pressed {
 			background-color: $toolbar-color;
 		}
-		&.focused, &:hover, &:focus, &.activated, &:active{
+		&.focused, &:hover, &:focus, &.activated, &:active {
 			background-color: $bg-color;
 		}
 	}
-	.lines-list>li{
-		&.focused, &:hover, &:focus{
+	.lines-list > li {
+		&.focused, &:hover, &:focus {
 			background-color: $toolbar-color;
 		}
-		&.activated{
-			&.focused, &:hover, &:focus{
+		&.activated {
+			&.focused, &:hover, &:focus {
 				background-color: $primary-color;
 			}
 		}
 	}
-	.checkbox{
+	.checkbox {
 		border: solid 2px rgba(255, 255, 255, 0.7);
-		&.checked{
+		&.checked {
 			border-color: $primary-color;
 		}
 	}
-	.radio-button{
-		.outer-border{
+	.radio-button {
+		.outer-border {
 			border: solid 2px rgba(255, 255, 255, 0.7);
 		}
-		&.on{
-			.outer-border{
+		&.on {
+			.outer-border {
 				border-color: $primary-color;
 			}
 		}
 	}
-	.switch{
-		.switch-bar{
-			background-color: rgba(255,255,255,0.3);
+	.switch {
+		.switch-bar {
+			background-color: rgba(255, 255, 255, 0.3);
 		}
-		.switch-button{
+		.switch-button {
 			background-color: #bdbdbd;
 		}
-		&.on{
-			.switch-button{
+		&.on {
+			.switch-button {
 				background-color: $primary-color;
 			}
 		}
 	}
-	.slider{
-		.slider-bar{
-			background-color: rgba(255,255,255,0.3);
+	.slider {
+		.slider-bar {
+			background-color: rgba(255, 255, 255, 0.3);
 		}
 	}
 	.divider {
 		background-color: $divider-color;
 	}
-	.paper{
+	.paper {
 		background-color: $bg-color;
+	}
+	/* all */
+	::-webkit-input-placeholder {
+		color: rgba(255,255,255,.3);;
+	}
+	::-moz-placeholder {
+		color: rgba(255,255,255,.3);;
+	}
+	/* firefox 19+ */
+	:-ms-input-placeholder {
+		color: rgba(255,255,255,.3);;
+	}
+	/* ie */
+	input:-moz-placeholder {
+		color: rgba(255,255,255,.3);;
+	}
+	input:not([type=submit]):not([type=file]) {
+		border-bottom: 1px solid rgba(255,255,255,.12);
+		&:focus {
+			border-bottom: 2px solid $primary-color;
+		}
+		&[disabled] {
+			border-bottom-style: dotted;
+			color: rgba(255,255,255,.3);
+		}
+	}
+	.labeled-input {
+		input:not([type=submit]):not([type=file]) {}
+		.label {
+			color: rgba(255,255,255,.3);
+		}
+		&.filled {
+			.label {
+				color: rgba(255,255,255,.3);
+			}
+		}
+		&.focus, &.pressed {
+			.label {
+				color: $primary-color;
+			}
+		}
 	}
 }
