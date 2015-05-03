@@ -1,0 +1,90 @@
+.tab-group {
+	display: block;
+	background-color: #fafafa;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	margin: $vertical-sizing 0;
+	.tab-bar {
+		position: relative;
+		overflow: hidden;
+		height: 6 * $vertical-sizing;
+		max-height: 6 * $vertical-sizing;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		@extend .resting-shadow;
+		z-index: 1;
+		.indicator {
+			min-width: 9 * $vertical-sizing;
+			max-width: 33 * $vertical-sizing;
+			height: 2px;
+			background-color: rgba(0, 0, 0, 1);
+			position: absolute;
+			bottom: 0;
+			transition: 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+		}
+		.tab {
+			height: 100%;
+			min-width: 9 * $vertical-sizing;
+			max-width: 33 * $vertical-sizing;
+			padding: 0 12px;
+			flex: 1;
+			text-align: center;
+			color: rgba(0, 0, 0, 0.6);
+			user-select: none;
+			cursor: context-menu;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			h1{
+				@extend .b2;
+				text-transform: uppercase;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			}
+			&.active {
+				color: rgba(0, 0, 0, 1);
+			}
+		}
+		&.colored {
+			background-color: $primary-color;
+			.indicator {
+				background-color: rgba(255, 255, 255, 1);
+			}
+			.tab {
+				color: rgba(255, 255, 255, 0.6);
+				&.active {
+					color: rgba(255, 255, 255, 1);
+				}
+			}
+		}
+		&.accented {
+			.indicator {
+				background-color: $primary-color;
+			}
+			.tab {
+				color: lighten($primary-color, 10%);
+				&.active {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+	.tab-display {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		left: 0;
+		transition: 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+		.tab-content {
+			display: inline-block;
+			float: left;
+			&.active {}
+		}
+	}
+}

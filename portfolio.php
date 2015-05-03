@@ -8,7 +8,7 @@ global $bsdfw;
 
 <div id="portfolio" data-role="page">
 	<div class="paper-sheet">
-		<div class="grid g-s1 g-m2 g-l3">
+		<div class="grid-list gs1 gm2 gl4">
 			<?php
 				switch($bsdfw['opt-projects-display']) {
 					case '1' : get_template_part('inc/portfolio/default-portfolio'); break;

@@ -1,80 +1,114 @@
-.black54{
+.black54 {
 	color: rgb(117, 117, 117);
-	color: rgba(0,0,0,0.54);
+	color: rgba(0, 0, 0, 0.54);
 }
 
-.black87{
-	color: rgb(33,33,33);
-	color: rgba(0,0,0,0.87);
+.black87 {
+	color: rgb(33, 33, 33);
+	color: rgba(0, 0, 0, 0.87);
 }
 
-.white54{
-	color: rgb(147,147,147);
+.white54 {
+	color: rgb(147, 147, 147);
 }
 
-.white87{
-	color: rgb(231,231,231);
+.white87 {
+	color: rgb(231, 231, 231);
 }
 
-html{
+html {
 	@extend .black87;
 	font-family: "Roboto","Noto", sans-serif;
 	font-size: 14px;
 	font-weight: $regular;
 }
 
-.d4{
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1rem;
+	font-family: "Roboto","Noto", sans-serif;
+	font-weight: $regular;
+	font-kerning: auto;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-variant-ligatures: normal;
+	margin: 0;
+	padding: 0;
+}
+
+.d4 {
 	font-size: 8rem;
 	font-weight: $light;
 	@extend .black54;
 }
-.d3{
+
+.d3 {
 	font-size: 4rem;
 	@extend .black54;
 }
-.d2{
+
+.d2 {
 	font-size: 3.21rem;
 	line-height: 1.06;
 	@extend .black54;
 }
-.d1{
+
+.d1 {
 	font-size: 2.43rem;
 	line-height: 1.18;
 	@extend .black54;
 }
-.headline{
+
+.headline {
 	font-size: 1.71rem;
 	line-height: 1.33;
 }
-.title{
+
+.title {
 	font-size: 1.43rem;
 	font-weight: $medium;
 }
-.subhead{
+
+.subhead {
 	font-size: 1.14rem;
 	line-height: 1.5;
+	@extend .black54;
 }
-.b2{
+
+.b2 {
 	font-size: 1rem;
 	line-height: 1.72;
 	font-weight: $medium;
 }
-.b1{
+
+.b1 {
 	font-size: 1rem;
 	line-height: 1.42;
 }
-.caption{
+
+.caption {
 	font-size: 0.86rem;
 	@extend .black54;
 }
 
-button{
+button {
 	@extend .b2;
 	text-transform: uppercase;
 }
 
 // Text Styles
-em { font-style: italic; }
-strong { font-weight: 700; }
-small { font-size: 75%; }
-.light { font-weight: 300; }
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: 700;
+}
+
+small {
+	font-size: 75%;
+}
+
+.light {
+	font-weight: 300;
+}

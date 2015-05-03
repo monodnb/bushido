@@ -7,7 +7,107 @@
 
 get_header(); ?>
 
-<div id="dialog-box">
+<div class="card">
+	<div class="optional-header">
+		<div class="avatar">
+			<img src="<?php echo get_template_directory_uri() . '/img/beautiful-mountains-01.jpg'?>" alt="">
+		</div>
+		<div class="text">
+			<h1 class="title">Beautiful mountains</h1>
+			<h2 class="subhead">Can't wait to go hiking!</h2>
+		</div>
+		<div class="overflow-menu">
+			<i class="mdi-navigation-more-vert"></i>
+		</div>
+	</div>
+	<div class="rich-media">
+		<img class="lazy" src="<?php echo get_template_directory_uri() . '/img/beautiful-mountains-01.jpg'?>" alt="">
+		<div class="scrim bottom"></div>
+		<div class="scrim top"></div>
+		<h1 class="title">Title on media</h1>
+		<div class="actions">
+			<div class="action-area right">
+				<i class="mdi-toggle-star-outline"></i>
+				<i class="mdi-content-send"></i>
+			</div>
+		</div>
+	</div>
+	<div class="primary-text">
+		<h1 class="title">Primary text title</h1>
+		<h2 class="subhead">Subtitle</h2>
+	</div>
+	<div class="supporting-text">
+		<p>Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position.</p>
+	</div>
+	<div class="supplemental-actions">
+		<div class="action-area">
+			<button class="flat">Read More</button>
+			<button class="flat">Action 2</button>
+		</div>
+		<div class="action-area right">
+			<i class="mdi-hardware-keyboard-arrow-up"></i>
+		</div>
+	</div>
+</div>
+<div class="tab-group">
+	<div class="tab-bar">
+		<div class="indicator"></div>
+		<div class="tab active" tab-rel="1"><h1>Item 1</h1></div>
+		<div class="tab" tab-rel="2"><h1>Item 2</h1></div>
+		<div class="tab" tab-rel="3"><h1>Item 3</h1></div>
+	</div>
+	<div class="tab-display">
+		<div class="tab-content active" tab-rel="1">
+			<div class="paper">
+				<div class="supporting-text">
+					<span class="title">This is the first tab</span>
+					<span class="content">Chambray Carles Terry Gibson balls plaid wolf. Disrupt fashion axe 90's quinoa +1 Neutra. Irony ethnic ennui McSweeney's, semiotics small batch squid direct trade. Readymade salvia Echo Park scenester.</span>
+				</div>
+			</div>
+		</div>
+		<div class="tab-content" tab-rel="2">
+			<div class="paper">
+				<div class="supporting-text">
+					<span class="title">Second tab</span>
+					<span class="content">Chambray Carles Terry Gibson balls plaid wolf. Disrupt fashion axe 90's quinoa +1 Neutra. Irony ethnic ennui McSweeney's, semiotics small batch squid direct trade. Readymade salvia Echo Park scenester.</span>
+				</div>
+			</div>
+		</div>
+		<div class="tab-content" tab-rel="3">
+			<div class="paper">
+				<div class="supporting-text">
+					<span class="title">And, third tab</span>
+					<span class="content">Chambray Carles Terry Gibson balls plaid wolf. Disrupt fashion axe 90's quinoa +1 Neutra. Irony ethnic ennui McSweeney's, semiotics small batch squid direct trade. Readymade salvia Echo Park scenester.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tab-group">
+	<div class="tab-bar accented">
+		<div class="indicator"></div>
+		<div class="tab active" tab-rel="1">
+			<h1>Item 1</h1>
+		</div>
+		<div class="tab" tab-rel="2">
+			<h1>Long title for a tab</h1>
+		</div>
+		<div class="tab" tab-rel="3">
+			<h1>Item 3</h1>
+		</div>
+	</div>
+</div>
+<div class="tab-group">
+	<div class="tab-bar colored">
+		<div class="indicator"></div>
+		<div class="tab active" tab-rel="1"><h1>Item 1</h1></div>
+		<div class="tab" tab-rel="2"><h1>Item 2</h1></div>
+		<div class="tab" tab-rel="3"><h1>Item 3</h1></div>
+		<div class="tab" tab-rel="2"><h1>Item 4</h1></div>
+		<div class="tab" tab-rel="3"><h1>Item 5</h1></div>
+	</div>
+</div>
+<!--<div id="dialog-box">
 	<div id="dialog">
 		<div class="supporting-text">
 			<span class="title">Dialog Box</span>
@@ -18,7 +118,7 @@ get_header(); ?>
 			<button class="flat">Agree</button>
 		</div>
 	</div>
-</div>
+</div>-->
 
 <div class="row">
 	<div class="paper">
@@ -190,9 +290,8 @@ get_header(); ?>
 <div class="paper">
 	<div class="title">Text Fields</div>
 	<input type="text" placeholder="With placeholder">
-	<input type="text" placeholder="With placeholder and autofocused">
 	<input type="text" placeholder="With label" label="Label">
-	<input type="text" placeholder="With label" label="Label" value="Default value" autofocus>
+	<input type="text" placeholder="With label" label="Label" value="Default value">
 	<input type="text" placeholder="With label" value="Disabled" disabled>
 	<textarea placeholder="With label"></textarea>
 </div>

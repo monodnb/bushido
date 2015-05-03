@@ -13,7 +13,7 @@
 @import "partials/mixins";
 @import "partials/whiteframes";
 @import "partials/shadows";
-@import "partials/icon_font";
+@import "partials/md_iconfont";
 @import "partials/md_icons";
 @import "partials/md_icons_white";
 @import "partials/typography";
@@ -28,6 +28,7 @@
 @import "partials/bottom_sheets";
 @import "partials/grid_list";
 @import "partials/toolbar";
+@import "partials/tabs";
 @import "partials/buttons";
 @import "partials/text_fields";
 @import "partials/floating_action_button";
@@ -36,4 +37,5 @@
 //@import "partials/form";
 
 
+@import "partials/ripple";
 @import "partials/test";

@@ -1,10 +1,11 @@
 $base-color: #eeeeee;
 $bg-color: #fafafa;
-$toolbar-color: #e0e0e0;
+$toolbar-color: #fafafa;
 $type-color-primary: rgba(0, 0, 0, 0.87);
 $type-color-secondary: rgba(0, 0, 0, 0.54);
 $type-color-disabled: rgba(0, 0, 0, 0.26);
 $divider-color: rgba(0, 0, 0, 0.12);
+$border-color: rgba(0, 0, 0, 0.54);
 
 body.light-theme {
 	background-color: $base-color;
@@ -73,7 +74,7 @@ body.light-theme {
 	.divider {
 		background-color: $divider-color;
 	}
-	.paper {
+	.paper, .card, .tile {
 		background-color: $bg-color;
 	}
 	/* all */
@@ -127,6 +128,7 @@ body.dark-theme {
 	$type-color-secondary: rgba(255, 255, 255, 0.7);
 	$type-color-disabled: rgba(255, 255, 255, 0.3);
 	$divider-color: rgba(255, 255, 255, 0.12);
+	$border-color: rgba(255, 255, 255, 0.54);
 	background-color: $base-color;
 	color: $type-color-primary;
 	.secondary {
@@ -193,7 +195,7 @@ body.dark-theme {
 	.divider {
 		background-color: $divider-color;
 	}
-	.paper {
+	.paper, .card, .tile {
 		background-color: $bg-color;
 	}
 	/* all */

@@ -177,11 +177,17 @@ function bushido_scripts() {
 
 	wp_enqueue_script( 'bushido-color-thief', get_template_directory_uri() . '/js/vendor/color-thief.js', array(), '', true );
 
+	wp_enqueue_script( 'bushido-cards', get_template_directory_uri() . '/js/components/cards.js', array(), '', true );
+
 	wp_enqueue_script( 'bushido-bottom-sheets', get_template_directory_uri() . '/js/components/bottom-sheets.js', array(), '', true );
 
 	wp_enqueue_script( 'bushido-list-controls', get_template_directory_uri() . '/js/components/list-controls.js', array(), '', true );
 
 	wp_enqueue_script( 'bushido-text-fields', get_template_directory_uri() . '/js/components/text-fields.js', array(), '', true );
+
+	wp_enqueue_script( 'bushido-ripple', get_template_directory_uri() . '/js/components/ripple.js', array(), '', true );
+
+	wp_enqueue_script( 'bushido-tabs', get_template_directory_uri() . '/js/components/tabs.js', array(), '', true );
 
 	wp_enqueue_script( 'bushido-main', get_template_directory_uri() . '/js/main.js', array(), '', true );
 

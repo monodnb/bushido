@@ -35,7 +35,7 @@ gulp.task("deploy", function () {
 	log("Deploying changed files to ftp server");
 	return gulp.src(["**", "!{/deploy,/deploy/**,/.git,/.git/**,/sass,/sass/**,/node_modules,/node_modules/**}"])
 		.pipe(changed("deploy"))
-		.pipe(conn.dest( "/public_html/ska/wp-content/themes/bushido"))
+		.pipe(conn.dest( "/public_html/wp-content/themes/bushido"))
 		.pipe(gulp.dest("deploy"));
 	log("Done");
 })

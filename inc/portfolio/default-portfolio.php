@@ -26,19 +26,16 @@
         $permalink = get_permalink();
         $image_url = wp_get_attachment_image_src($image_id,'card', true);
 	?>
+
+<div class="cell">
 <div class="tile">
-    <div class="work-card no-select">
-        <div class="work-card-image on">
-            <img src="<?php echo $image_url[0] ?>" alt="">
-        </div>
-        <div class="work-card-overlay off"></div>
-        <div class="work-card-info off">
-            <div class="work-card-action">
-                <img class="responsive-img" src="http://localhost/wp-content/uploads/2015/03/play.svg" href="<?php echo $permalink ?>">
-            </div>
-            <span class="work-card-title"><?php echo $title ?></span>
-        </div>
-    </div>
+	<div class="media">
+		<img src="<?php echo $image_url[0] ?>" alt="">
+		<div class="scrim bottom"></div>
+		<div class="scrim top"></div>
+		<span class="title"><?php echo $title ?></span>
+	</div>
+</div>
 </div>
 	<?php endwhile; ?>
 
